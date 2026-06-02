@@ -342,31 +342,33 @@ html[lang="hi"] nav a {
   transform: scale(1.1);
 }
 
- .tag-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    animation: fadeUp 0.7s 0.3s ease both;
-  }
-  .tag {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 12px;
-    font-weight: 500;
-    color: #0D1B3E;
-    background: #fff;
-    border: 1px solid rgba(13,27,62,0.12);
-    border-radius: 20px;
-    padding: 6px 14px;
-    letter-spacing: 0.02em;
-  }
-  .tag-dot {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: #f43a3a;
-    flex-shrink: 0;
-  }
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  animation: fadeUp 0.7s 0.3s ease both;
+}
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #0d1b3e;
+  background: #fff;
+  border: 1px solid rgba(13, 27, 62, 0.12);
+  border-radius: 20px;
+  padding: 6px 14px;
+  letter-spacing: 0.02em;
+}
+.tag-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #f43a3a;
+  flex-shrink: 0;
+}
+.heading { position: relative; padding-right: 3rem; } /* adjust width to icon size + gap */
+.heading .icon { position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); }
