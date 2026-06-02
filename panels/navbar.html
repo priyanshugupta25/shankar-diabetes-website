@@ -1,0 +1,160 @@
+<!-- preloader -->
+<div class="preloader">
+    <div id="loader"></div>
+</div>
+<!-- preloader end -->
+
+<!-- header -->
+<header class="z-99 sticky-header main-bar-wraper navbar-expand-lg duretion-500">
+    <div class="main-bar">
+        <div class="container">
+            <div class="bottom-bar">
+                <div class="two-bar">
+                    <div class="flex items-center justify-between">
+                        <div class="logo">
+                            <a href="index.php">
+                                <img alt="logo" src="assets/img/logo-4.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:void(0)" id="mobile-menu" class="menu-start">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <nav class="navbar lg:block hidden">
+                    <ul class="navbar-links">
+                        <li class="menu-item-children">
+                            <a href="index.php" data-i18n="nav_home">Home</a>
+                        </li>
+                        <li class="navbar-dropdown">
+                            <a href="about.php" data-i18n="nav_about">About</a>
+                        </li>
+                        <li class="navbar-dropdown">
+                            <a href="services.php" data-i18n="nav_services">Services</a>
+                        </li>
+                        <li class="navbar-dropdown">
+                            <a href="facilities.php" data-i18n="nav_facilities">Facilities</a>
+                        </li>
+                        <li class="navbar-dropdown menu-item-children">
+                            <a href="javascript:void(0);" data-i18n="nav_blog">Blog</a>
+                            <ul class="sub-menu">
+                                <li><a href="articles.php" data-i18n="nav_articles">Latest Articles</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-dropdown">
+                            <a href="contact.php" data-i18n="nav_contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-menu-right">
+                    <!-- Language Switcher -->
+                    <div class="lang-switcher-wrapper">
+                        <button class="language-btn">
+                            <img src="assets/img/language.svg" width="15px" alt="">
+                            <span class="lang-label">हिंदी</span>
+                            <i class="fa-solid fa-chevron-down" style="font-size:11px;"></i>
+                        </button>
+                        <div class="lang-dropdown" style="
+                        display:none;
+                        position:absolute;
+                        top:calc(100% + 8px);
+                        right:0;
+                        background:#fff;
+                        border:1px solid #e5e7eb;
+                        border-radius:8px;
+                        box-shadow:0 4px 16px rgba(0,0,0,0.10);
+                        min-width:130px;
+                        z-index:9999;
+                        overflow:hidden;
+                    ">
+                            <div class="lang-option" data-lang="hi" style="
+                            padding:10px 18px;
+                            cursor:pointer;
+                            font-size:14px;
+                            display:flex;
+                            align-items:center;
+                            gap:8px;
+                            transition:background 0.2s;
+                        ">
+                                <span style="font-size:18px;">🇮🇳</span> हिंदी
+                            </div>
+                            <div class="lang-option" data-lang="en" style="
+                            padding:10px 18px;
+                            cursor:pointer;
+                            font-size:14px;
+                            display:flex;
+                            align-items:center;
+                            gap:8px;
+                            transition:background 0.2s;
+                        ">
+                                <span style="font-size:18px;">🇬🇧</span> English
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.php" class="btn xl:block hidden">
+                        <span data-i18n="nav_book_btn">Book Appointment<i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div class="mobile-nav" id="mobile-nav">
+            <div class="res-log mb-30">
+                <a href="index.php">
+                    <img alt="logo" src="assets/img/logo-4.png" class="w-auto" />
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.php" data-i18n="nav_home">Home</a></li>
+                <li><a href="about.php" data-i18n="nav_about">About</a></li>
+                <li><a href="services.php" data-i18n="nav_services">Services</a></li>
+                <li><a href="facilities.php" data-i18n="nav_facilities">Facilities</a></li>
+                <li class="menu-item-has-children">
+                    <a href="javascript:void(0)" data-i18n="nav_blog">Blog</a>
+                    <ul class="sub-menu">
+                        <li><a href="articles.php" data-i18n="nav_articles">Latest Articles</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.php" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+            <!-- Mobile language switcher -->
+            <div style="padding:16px 0 8px; display:flex; gap:10px;">
+                <button class="lang-option-mobile" data-lang="hi"
+                    style="flex:1; padding:8px; border:1px solid #e5e7eb;
+               border-radius:6px; cursor:pointer; font-size:13px; background:#fff;">
+                    🇮🇳 हिंदी
+                </button>
+                <button class="lang-option-mobile" data-lang="en"
+                    style="flex:1; padding:8px; border:1px solid #e5e7eb;
+               border-radius:6px; cursor:pointer; font-size:13px; background:#fff;">
+                    🇬🇧 English
+                </button>
+            </div>
+            <a href="JavaScript:void(0)" id="res-cross"></a>
+        </div>
+    </div>
+</header>
+
+<!-- Sticky Social Media Icons - Right Side -->
+<div class="sticky-social-icons">
+    <a href="https://www.facebook.com/Shankardiabetescare/" class="social-icon" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a href="https://x.com/shankardiabetes/" class="social-icon" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
+    <a href="https://www.instagram.com/shankardiabetescare/" class="social-icon" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://www.youtube.com/@Shankardiabetescarecentre" class="social-icon" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+    <a href="https://www.linkedin.com/company/shankar-diabetes-care-centre-patna/" class="social-icon" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="https://www.threads.com/@shankardiabetescare/" class="social-icon" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-threads"></i>
+    </a>
+</div>

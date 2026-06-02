@@ -1,0 +1,1352 @@
+<!doctype html>
+<html lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shankar Diabetes Care Centre</title>
+    <link rel="icon" href="assets/img/favicon.png" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/icons/flaticon/flaticon.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/icons/fontawesome/css/all.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="assets/icons/themify-icons/css/themify-icons.css"
+    />
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/plugins/nice-select/nice-select.css"
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&amp;family=Urbanist:ital,wght@0,100..900;1,100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+  </head>
+
+  <body class="selection:bg-primary selection:text-white">
+    <!-- preloader -->
+    <div class="preloader">
+      <div id="loader"></div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- header -->
+    <header
+      class="z-99 sticky-header main-bar-wraper navbar-expand-lg duretion-500"
+    >
+      <div class="main-bar">
+        <div class="container">
+          <div class="bottom-bar">
+            <div class="two-bar">
+              <div class="flex items-center justify-between">
+                <div class="logo">
+                  <a href="index.php">
+                    <img alt="logo" src="assets/img/logo-4.png" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a href="javascript:void(0)" id="mobile-menu" class="menu-start">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+            <nav class="navbar lg:block hidden">
+              <ul class="navbar-links">
+                <li class="menu-item-children">
+                  <a href="index.php" data-i18n="nav_home">Home</a>
+                </li>
+                <li class="navbar-dropdown">
+                  <a href="about.php" data-i18n="nav_about">About</a>
+                </li>
+                <li class="navbar-dropdown">
+                  <a href="services.php" data-i18n="nav_services">Services</a>
+                </li>
+                <li class="navbar-dropdown">
+                  <a href="facilities.php" data-i18n="nav_facilities"
+                    >Facilities</a
+                  >
+                </li>
+                <li class="navbar-dropdown menu-item-children">
+                  <a href="javascript:void(0);" data-i18n="nav_blog">Blog</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="articles.php" data-i18n="nav_articles"
+                        >Latest Articles</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-dropdown">
+                  <a href="contact.php" data-i18n="nav_contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header-menu-right">
+              <!-- Language Switcher -->
+              <div class="lang-switcher-wrapper">
+                <button class="language-btn">
+                  <img src="assets/img/language.svg" width="15px" alt="" />
+                  <span class="lang-label">हिंदी</span>
+                  <i
+                    class="fa-solid fa-chevron-down"
+                    style="font-size: 11px"
+                  ></i>
+                </button>
+                <div
+                  class="lang-dropdown"
+                  style="
+                    display: none;
+                    position: absolute;
+                    top: calc(100% + 8px);
+                    right: 0;
+                    background: #fff;
+                    border: 1px solid #e5e7eb;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+                    min-width: 130px;
+                    z-index: 9999;
+                    overflow: hidden;
+                  "
+                >
+                  <div
+                    class="lang-option"
+                    data-lang="hi"
+                    style="
+                      padding: 10px 18px;
+                      cursor: pointer;
+                      font-size: 14px;
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      transition: background 0.2s;
+                    "
+                  >
+                    <span style="font-size: 18px">🇮🇳</span> हिंदी
+                  </div>
+                  <div
+                    class="lang-option"
+                    data-lang="en"
+                    style="
+                      padding: 10px 18px;
+                      cursor: pointer;
+                      font-size: 14px;
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      transition: background 0.2s;
+                    "
+                  >
+                    <span style="font-size: 18px">🇬🇧</span> English
+                  </div>
+                </div>
+              </div>
+              <a href="contact.php" class="btn xl:block hidden">
+                <span data-i18n="nav_book_btn"
+                  >Book Appointment<i class="fa-solid fa-arrow-right"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div class="mobile-nav" id="mobile-nav">
+          <div class="res-log mb-30">
+            <a href="index.php">
+              <img alt="logo" src="assets/img/logo-4.png" class="w-auto" />
+            </a>
+          </div>
+          <ul>
+            <li><a href="index.php" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.php" data-i18n="nav_about">About</a></li>
+            <li>
+              <a href="services.php" data-i18n="nav_services">Services</a>
+            </li>
+            <li>
+              <a href="facilities.php" data-i18n="nav_facilities">Facilities</a>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="javascript:void(0)" data-i18n="nav_blog">Blog</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="articles.php" data-i18n="nav_articles"
+                    >Latest Articles</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="contact.php" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+          <!-- Mobile language switcher -->
+          <div style="padding: 16px 0 8px; display: flex; gap: 10px">
+            <button
+              class="lang-option-mobile"
+              data-lang="hi"
+              style="
+                flex: 1;
+                padding: 8px;
+                border: 1px solid #e5e7eb;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 13px;
+                background: #fff;
+              "
+            >
+              🇮🇳 हिंदी
+            </button>
+            <button
+              class="lang-option-mobile"
+              data-lang="en"
+              style="
+                flex: 1;
+                padding: 8px;
+                border: 1px solid #e5e7eb;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 13px;
+                background: #fff;
+              "
+            >
+              🇬🇧 English
+            </button>
+          </div>
+          <a href="JavaScript:void(0)" id="res-cross"></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sticky Social Media Icons - Right Side -->
+    <div class="sticky-social-icons">
+      <a
+        href="https://www.facebook.com/Shankardiabetescare/"
+        class="social-icon"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a
+        href="https://x.com/shankardiabetes/"
+        class="social-icon"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/shankardiabetescare/"
+        class="social-icon"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a
+        href="https://www.youtube.com/@Shankardiabetescarecentre"
+        class="social-icon"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/company/shankar-diabetes-care-centre-patna/"
+        class="social-icon"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a
+        href="https://www.threads.com/@shankardiabetescare/"
+        class="social-icon"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-threads"></i>
+      </a>
+    </div>
+
+    <section
+      class="pt-90 relative max-lg:bg-[right_center] bg-[#f4f4f4] bg-[url(../img/bannr-bg-img.png)] about-banner overflow-hidden"
+    >
+      <div class="container">
+        <div class="row items-center">
+          <div class="lg:w-1/2 w-full">
+            <div class="relative max-md:text-center">
+              <h2
+                data-i18n="services_label"
+                class="xxl:text-7.7xl xl:text-6.3xl md:text-5.2xl sm:text-4.75xl text-4.6xl font-bold capitalize font-sora text-secondary leading-[1.2]"
+              >
+                Services
+              </h2>
+              <img
+                src="assets/img/shap-three-1.png"
+                alt="banner-shap"
+                class="absolute w-46 w-35 -top-30 -left-32 max-md:hidden animate-topshap"
+              />
+            </div>
+            <ol
+              class="mb-16 flex items-center max-md:justify-center max-md:mb-40 pt-10"
+            >
+              <li
+                data-i18n="breadcrumb_home"
+                class="xxl:text-xxl md:text-xl text-sm text-secondary font-sora capitalize"
+              >
+                <a href="index.php"> Home </a>
+              </li>
+              <li
+                data-i18n="services_label"
+                class="xxl:text-xxl md:text-xl text-sm text-gary capitalize before:content-['-'] before:float-left before:text-gary before:px-10"
+                aria-current="page"
+              >
+                Services
+              </li>
+            </ol>
+          </div>
+          <div class="lg:w-1/2 w-full">
+            <div>
+              <img
+                id="about-banner-img"
+                src="assets/img/Banner-07-hi.png"
+                alt="banner image"
+                class="xxl:max-w-[unset]"
+              />
+              <ul class="shaps">
+                <li class="absolute"></li>
+                <li class="absolute">
+                  <img
+                    src="assets/img/bannr-shap.png"
+                    alt="img"
+                    class="animate-topshap max-md:hidden"
+                  />
+                </li>
+                <li class="absolute"></li>
+                <li class="absolute">
+                  <img
+                    src="assets/img/shaps-5.png"
+                    alt="img"
+                    class="animate-fa-spin max-md:hidden"
+                  />
+                </li>
+                <li class="absolute">
+                  <img
+                    src="assets/img/shaps-6.png"
+                    alt="img"
+                    class="animate-fa-spin max-md:hidden"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services section -->
+    <section class="relative lg:py-120 md:py-80 py-60 section-blog">
+      <div class="container">
+        <div class="grid grid-cols-12 gap-25">
+          <div class="lg:col-span-4 col-span-12">
+            <div class="group">
+              <div
+                class="services-box shadow-[0px_0px_15px_0px_rgba(0,0,0,0.07)] relative xxl:p-40 p-30 xxl:m-15 m-10 before:w-full before:h-0 before:bg-primary before:absolute before:bottom-0 before:left-0 group-hover:before:h-full before:duration-500"
+                style="height: 380px !important"
+              >
+                <i
+                  class="bg-[rgb(240,93,193)] group-hover:bg-white size-90 flex items-center justify-center mb-25 relative shadow-[0px_0px_24px_0px_rgba(240,93,168,0.4)] rounded-full"
+                >
+                  <svg
+                    width="45"
+                    height="47"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <!-- Blood drop -->
+                    <path
+                      d="M24 4C24 4 12 18 12 27C12 34.732 17.268 40 24 40C30.732 40 36 34.732 36 27C36 18 24 4 24 4Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+
+                    <!-- Medical cross inside -->
+                    <path
+                      d="M24 18V30M18 24H30"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </i>
+                <div>
+                  <h4
+                    class="xl:text-xl font-sora text-secondary font-medium leading-[1.2]"
+                  >
+                    <a
+                      data-i18n="service_1_title"
+                      href="javascript:void(0)"
+                      class="xxl:text-xl text-md font-bold font-sora relative text-secondary group-hover:text-white duration-500"
+                      >Diabetes Consultation & Management</a
+                    >
+                  </h4>
+                </div>
+                <p
+                  data-i18n="service_1_desc"
+                  class="pt-10 pb-20 relative text-base leading-32 text-[#6f6f6f] font-normal group-hover:text-white duration-500"
+                >
+                  Personalized care for Type 1 & Type 2 diabetes.
+                </p>
+
+                <!-- <a
+                                href="javascript:void(0)"
+                                class="relative font-bold text-secondary font-sora group-hover:text-white duration-500">Read More<i
+                                    class="fa-solid fa-arrow-right ml-12 relative"></i></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-4 col-span-12">
+            <div class="group">
+              <div
+                class="services-box shadow-[0px_0px_15px_0px_rgba(0,0,0,0.07)] relative xxl:p-40 p-30 xxl:m-15 m-10 before:w-full before:h-0 before:bg-primary before:absolute before:bottom-0 before:left-0 group-hover:before:h-full before:duration-500"
+                style="height: 380px !important"
+              >
+                <i
+                  class="bg-[#69b741] group-hover:bg-white size-90 flex items-center justify-center mb-25 relative shadow-[0px_0px_24px_0px_rgba(240,93,168,0.4)] rounded-full text-black group-hover:text-black"
+                >
+                  <svg
+                    width="45"
+                    height="47"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <!-- Neck outline -->
+                    <path
+                      d="M18 10C18 10 20 14 24 14C28 14 30 10 30 10"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+
+                    <path
+                      d="M20 14V22C20 26 22 28 24 28C26 28 28 26 28 22V14"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+
+                    <!-- Thyroid gland (butterfly shape) -->
+                    <path
+                      d="M20 22C18 22 17 24 18.5 26C20 28 22 27 23 25"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+
+                    <path
+                      d="M28 22C30 22 31 24 29.5 26C28 28 26 27 25 25"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+
+                    <!-- Center connection -->
+                    <line
+                      x1="23"
+                      y1="25"
+                      x2="25"
+                      y2="25"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </i>
+                <h4
+                  class="xl:text-xl font-sora text-secondary font-medium leading-[1.2]"
+                >
+                  <a
+                    data-i18n="service_2_title"
+                    href="javascript:void(0)"
+                    class="xxl:text-xl text-md font-bold font-sora relative text-secondary group-hover:text-white duration-500"
+                    >Thyroid & Hormonal Disorder Treatment</a
+                  >
+                </h4>
+                <p
+                  data-i18n="service_2_desc"
+                  class="pt-10 pb-20 relative text-base leading-32 text-[#6f6f6f] font-normal group-hover:text-white duration-500"
+                >
+                  Endocrinology solutions for overall health.
+                </p>
+
+                <!-- <a
+                                href="javascript:void(0)"
+                                class="relative font-bold text-secondary font-sora group-hover:text-white duration-500">Read More<i
+                                    class="fa-solid fa-arrow-right ml-12 relative"></i></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-4 col-span-12">
+            <div class="group">
+              <div
+                class="services-box shadow-[0px_0px_15px_0px_rgba(0,0,0,0.07)] relative xxl:p-40 p-30 xxl:m-15 m-10 before:w-full before:h-0 before:bg-primary before:absolute before:bottom-0 before:left-0 group-hover:before:h-full before:duration-500"
+                style="height: 380px !important"
+              >
+                <i
+                  class="bg-[#58CBF2] group-hover:bg-white size-90 flex items-center justify-center mb-25 relative shadow-[0px_0px_24px_0px_rgba(240,93,168,0.4)] rounded-full text-black group-hover:text-black"
+                >
+                  <svg
+                    width="45"
+                    height="47"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <!-- Heart (Hypertension) -->
+                    <path
+                      d="M24 36C24 36 10 28 10 18C10 14 13 11 17 11C20 11 22 13 24 15C26 13 28 11 31 11C35 11 38 14 38 18C38 28 24 36 24 36Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+
+                    <!-- Pulse line -->
+                    <path
+                      d="M14 22H18L20 18L23 26L26 20H30L32 22"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+
+                    <!-- Waist / Obesity indicator -->
+                    <path
+                      d="M18 40C18 37 21 35 24 35C27 35 30 37 30 40"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </i>
+                <h4
+                  class="xl:text-xl font-sora text-secondary font-medium leading-[1.2]"
+                >
+                  <a
+                    data-i18n="service_3_title"
+                    href="javascript:void(0)"
+                    class="xxl:text-xl text-md font-bold font-sora relative text-secondary group-hover:text-white duration-500"
+                    >Hypertension & Obesity Management</a
+                  >
+                </h4>
+                <p
+                  data-i18n="service_3_desc"
+                  class="pt-10 pb-20 relative text-base leading-32 text-[#6f6f6f] font-normal group-hover:text-white duration-500"
+                >
+                  Lifestyle guidance & medical treatment.
+                </p>
+
+                <!-- <a
+                                href="javascript:void(0)"
+                                class="relative font-bold text-secondary font-sora group-hover:text-white duration-500">Read More<i
+                                    class="fa-solid fa-arrow-right ml-12 relative"></i></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-4 col-span-12">
+            <div class="group">
+              <div
+                class="services-box shadow-[0px_0px_15px_0px_rgba(0,0,0,0.07)] relative xxl:p-40 p-30 xxl:m-15 m-10 before:w-full before:h-0 before:bg-primary before:absolute before:bottom-0 before:left-0 group-hover:before:h-full before:duration-500"
+                style="height: 380px !important"
+              >
+                <i
+                  class="bg-[#9B52E1] group-hover:bg-white size-90 flex items-center justify-center mb-25 relative shadow-[0px_0px_24px_0px_rgba(240,93,168,0.4)] rounded-full text-black group-hover:text-black"
+                >
+                  <svg
+                    width="45"
+                    height="47"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <!-- Eye outline -->
+                    <path
+                      d="M6 24C12 14 36 14 42 24C36 34 12 34 6 24Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+
+                    <!-- Iris / pupil -->
+                    <circle
+                      cx="24"
+                      cy="24"
+                      r="6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+
+                    <!-- Medical cross (care) inside pupil -->
+                    <path
+                      d="M24 21V27M21 24H27"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </i>
+                <h4
+                  class="xl:text-xl font-sora text-secondary font-medium leading-[1.2]"
+                >
+                  <a
+                    data-i18n="service_4_title"
+                    href="javascript:void(0)"
+                    class="xxl:text-xl text-md font-bold font-sora relative text-secondary group-hover:text-white duration-500"
+                    >Diabetic Neuropathy, Nephropathy & Retinopathy Care</a
+                  >
+                </h4>
+                <p
+                  data-i18n="service_4_desc"
+                  class="pt-10 pb-20 relative text-base leading-32 text-[#6f6f6f] font-normal group-hover:text-white duration-500"
+                >
+                  Specialized monitoring & interventions.
+                </p>
+                <!-- <a
+                                href="javascript:void(0)"
+                                class="relative font-bold text-secondary font-sora group-hover:text-white duration-500">Read More<i
+                                    class="fa-solid fa-arrow-right ml-12 relative"></i></a> -->
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-4 col-span-12">
+            <div class="group">
+              <div
+                class="services-box shadow-[0px_0px_15px_0px_rgba(0,0,0,0.07)] relative xxl:p-40 p-30 xxl:m-15 m-10 before:w-full before:h-0 before:bg-primary before:absolute before:bottom-0 before:left-0 group-hover:before:h-full before:duration-500"
+                style="height: 380px !important"
+              >
+                <i
+                  class="bg-[#69b741] group-hover:bg-white size-90 flex items-center justify-center mb-25 relative shadow-[0px_0px_24px_0px_rgba(240,93,168,0.4)] rounded-full text-black group-hover:text-black"
+                >
+                  <svg
+                    width="45"
+                    height="47"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <!-- Shield (prevention) -->
+                    <path
+                      d="M24 4L36 10V20C36 30 30 36 24 40C18 36 12 30 12 20V10L24 4Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+
+                    <!-- Medical cross (health check) -->
+                    <path
+                      d="M24 16V28M18 22H30"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </i>
+                <h4
+                  class="xl:text-xl font-sora text-secondary font-medium leading-[1.2]"
+                >
+                  <a
+                    data-i18n="service_5_title"
+                    href="javascript:void(0)"
+                    class="xxl:text-xl text-md font-bold font-sora relative text-secondary group-hover:text-white duration-500"
+                    >Preventive Health Check-ups</a
+                  >
+                </h4>
+                <p
+                  data-i18n="service_5_desc"
+                  class="pt-10 pb-20 relative text-base leading-32 text-[#6f6f6f] font-normal group-hover:text-white duration-500"
+                >
+                  Early detection and prevention programs.
+                </p>
+
+                <!-- <a
+                                href="javascript:void(0)"
+                                class="relative font-bold text-secondary font-sora group-hover:text-white duration-500">Read More<i
+                                    class="fa-solid fa-arrow-right ml-12 relative"></i></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="shaps">
+        <li class="absolute">
+          <img src="assets/img/shaps-7.png" alt="img" class="animate-fa-spin" />
+        </li>
+        <li class="absolute">
+          <img src="assets/img/shaps-8.png" alt="img" class="animate-fa-spin" />
+        </li>
+      </ul>
+    </section>
+
+    <!-- FAQ's -->
+
+    <section class="xxl:py-80 lg:py-60 md:py-40 py-40">
+      <div class="container">
+        <div class="xl:pb-50 lg:pb-40 pb-30 text-center m-auto md:w-[60%]">
+          <h3
+            class="xxl:text-5xl xl:text-4.65xl lg:text-3.8xl md:text-4xl sm:text-3xl text-2.5xl font-semibold font-sora text-secondary leading-[1.2]"
+          >
+            Frequently Asked Questions
+          </h3>
+        </div>
+        <div class="accordion xxl:pt-50 pt-40 xxl:pb-25 pb-15">
+          <div class="accordion-item active">
+            <a
+              href="javascript:void(0)"
+              class="heading block capitalize text-black font-bold text-2xl relative duration-500 w-full"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="services_faq1_ques">
+                What services are available at Shankar Diabetes Care Centre?
+              </div>
+            </a>
+
+            <div
+              class="content pb-24 pt-0 bg-[#24243500]"
+              style="display: block"
+            >
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="services_faq1_ans"
+              >
+                At Shankar Diabetes Care Centre, we provide comprehensive care
+                for diabetes, thyroid disorders, hormonal imbalance,
+                hypertension, obesity management, diabetic complications,
+                preventive health check-ups, lifestyle counseling, and long-term
+                diabetes management.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a
+              href="javascript:void(0)"
+              class="heading block w-full capitalize text-secondary font-bold text-2xl relative duration-500"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="services_faq2_ques">
+                Who should visit a diabetes specialist?
+              </div>
+            </a>
+
+            <div class="content pb-24">
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="services_faq2_ans"
+              >
+                People experiencing high blood sugar, frequent urination,
+                excessive thirst, sudden weight changes, fatigue,
+                thyroid-related symptoms, obesity, or hormonal imbalance should
+                consult a diabetes and endocrinology specialist for proper
+                evaluation and treatment.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a
+              href="javascript:void(0)"
+              class="heading block w-full capitalize text-secondary font-bold text-2xl relative duration-500"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="services_faq3_ques">
+                Do you provide treatment for both Type 1 and Type 2 diabetes?
+              </div>
+            </a>
+
+            <div class="content pb-24">
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="services_faq3_ans"
+              >
+                Yes, we offer personalized treatment and management plans for
+                both Type 1 and Type 2 diabetes, including medication guidance,
+                insulin management, diet counseling, and lifestyle modification
+                support.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a
+              href="javascript:void(0)"
+              class="heading block w-full capitalize text-secondary font-bold text-2xl relative duration-500"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="services_faq4_ques">
+                Can diabetes be managed without complications?
+              </div>
+            </a>
+            <div class="content pb-24">
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="services_faq4_ans"
+              >
+                Yes, with regular monitoring, proper medication, healthy
+                lifestyle habits, and timely medical consultation, diabetes can
+                be effectively managed and the risk of complications can be
+                significantly reduced.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a
+              href="javascript:void(0)"
+              class="heading block w-full capitalize text-secondary font-bold text-2xl relative duration-500"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="services_faq5_ques">
+                What diabetic complications do you treat?
+              </div>
+            </a>
+            <div class="content pb-24">
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="services_faq5_ans"
+              >
+                We provide monitoring and management for diabetic complications
+                such as diabetic neuropathy (nerve damage), nephropathy
+                (kidney-related complications), and retinopathy (eye-related
+                complications).
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a
+              href="javascript:void(0)"
+              class="heading block w-full capitalize text-secondary font-bold text-2xl relative duration-500"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="services_faq6_ques">
+                Do you provide thyroid and hormonal disorder treatment?
+              </div>
+            </a>
+            <div class="content pb-24">
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="services_faq6_ans"
+              >
+                Yes, we diagnose and treat thyroid disorders, hormonal
+                imbalance, metabolic conditions, and endocrine-related health
+                issues with personalized care plans.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a
+              href="javascript:void(0)"
+              class="heading block w-full capitalize text-secondary font-bold text-2xl relative duration-500"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="services_faq7_ques">
+                Why is preventive health check-up important for diabetes
+                patients?
+              </div>
+            </a>
+            <div class="content pb-24">
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="services_faq7_ans"
+              >
+                Preventive health check-ups help in early detection of
+                diabetes-related complications, blood pressure issues, obesity
+                risks, and hormonal disorders, allowing timely treatment and
+                better long-term health outcomes.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a
+              href="javascript:void(0)"
+              class="heading block w-full capitalize text-secondary font-bold text-2xl relative duration-500"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="services_faq8_ques">
+                Can obesity and hypertension increase the risk of diabetes?
+              </div>
+            </a>
+            <div class="content pb-24">
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="services_faq8_ans"
+              >
+                Yes, obesity and high blood pressure are major risk factors for
+                diabetes and other metabolic disorders. Proper lifestyle
+                management and medical supervision can help control these
+                conditions effectively.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a
+              href="javascript:void(0)"
+              class="heading block w-full capitalize text-secondary font-bold text-2xl relative duration-500"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="services_faq9_ques">
+                Do you provide diet and lifestyle counseling?
+              </div>
+            </a>
+            <div class="content pb-24">
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="services_faq9_ans"
+              >
+                Yes, our diabetes care approach includes diet guidance, exercise
+                recommendations, weight management support, and lifestyle
+                counseling to help patients maintain healthy blood sugar levels.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a
+              href="javascript:void(0)"
+              class="heading block w-full capitalize text-secondary font-bold text-2xl relative duration-500"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="services_faq10_ques">
+                Why choose Shankar Diabetes Care Centre?
+              </div>
+            </a>
+            <div class="content pb-24">
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="services_faq10_ans"
+              >
+                Shankar Diabetes Care Centre has been dedicated to comprehensive
+                diabetes and endocrine care since 2002, offering experienced
+                medical guidance, personalized treatment plans, preventive care,
+                and patient-focused management for long-term health and
+                wellness.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="scroll-percentage"><span id="scroll-percentage-value"></span></div>
+
+    <div id="audio-fab-wrap">
+      <button id="audio-fab" aria-label="Mute audio">
+        <span class="ripple"></span>
+        <span class="fab-tooltip" id="fab-tooltip">Mute</span>
+        <!-- Speaker ON icon -->
+        <svg id="icon-on" viewBox="0 0 24 24">
+          <path
+            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77S18.01 4.14 14 3.23z"
+          />
+        </svg>
+        <!-- Speaker OFF icon (hidden by default) -->
+        <svg id="icon-off" viewBox="0 0 24 24" style="display: none">
+          <path
+            d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"
+          />
+        </svg>
+      </button>
+    </div>
+    <a
+      class="whatsapp-sticky"
+      href="https://wa.me/+917070992526"
+      target="_blank"
+    >
+      <!-- <span class="chat-text">Chat with us</span> -->
+      <div class="icon">
+        <svg viewBox="0 0 24 24">
+          <path
+            fill="#eceff1"
+            d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z"
+          />
+          <path
+            fill="#4caf50"
+            d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z"
+          />
+          <path
+            fill="#fafafa"
+            d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"
+          />
+        </svg>
+      </div>
+    </a>
+
+    <!-- footer section -->
+    <footer class="lg:pt-70 md:pt-40 pt-30 relative bg-[#F4F4FF]">
+      <div class="container">
+        <div class="lg:py-100 md:py-80 py-60">
+          <div class="grid grid-cols-12 gap-25">
+            <div class="lg:col-span-3 sm:col-span-6 col-span-12">
+              <div class="footre-logo">
+                <a href="index.php"
+                  ><img src="assets/img/logo-4.png" alt="img"
+                /></a>
+                <p
+                  class="pt-14 pb-30 text-base leading-30 text-gary font-normal"
+                  data-i18n="footer_about"
+                >
+                  To provide specialized and affordable diabetes care for a
+                  healthier, happier future.
+                </p>
+                <ul class="flex" style="gap: 3px">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/Shankardiabetescare/"
+                      class="flex items-center justify-center xxl:size-50 size-40 max-xxl:text-sm border border-[#444] rounded-full hover:bg-primary duration-500 hover:text-white hover:border-transparent"
+                      target="_blank"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://x.com/shankardiabetes/"
+                      class="flex items-center justify-center xxl:size-50 size-40 max-xxl:text-sm border border-[#444] rounded-full hover:bg-primary duration-500 hover:text-white hover:border-transparent"
+                      target="_blank"
+                      ><i class="fa-brands fa-x-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/shankardiabetescare/"
+                      class="flex items-center justify-center xxl:size-50 size-40 max-xxl:text-sm border border-[#444] rounded-full hover:bg-primary duration-500 hover:text-white hover:border-transparent"
+                      target="_blank"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/@Shankardiabetescarecentre/"
+                      class="flex items-center justify-center xxl:size-50 size-40 max-xxl:text-sm border border-[#444] rounded-full hover:bg-primary duration-500 hover:text-white hover:border-transparent"
+                      target="_blank"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.threads.com/@shankardiabetescare/ "
+                      class="flex items-center justify-center xxl:size-50 size-40 max-xxl:text-sm border border-[#444] rounded-full hover:bg-primary duration-500 hover:text-white hover:border-transparent"
+                      target="_blank"
+                      ><i class="fa-brands fa-threads"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=" https://www.linkedin.com/company/shankar-diabetes-care-centre-patna/"
+                      class="flex items-center justify-center xxl:size-50 size-40 max-xxl:text-sm border border-[#444] rounded-full hover:bg-primary duration-500 hover:text-white hover:border-transparent"
+                      target="_blank"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="lg:col-span-3 sm:col-span-6 col-span-12">
+              <div
+                class="lg:border-l lg:border-[#D8D8D8] xxl:pl-80 xl:pl-50 sm:pl-40 xxl:ml-40 sm:ml-20"
+              >
+                <h5
+                  class="font-bold xxl:text-2xxl text-xxl capitalize pb-18 font-sora text-secondary"
+                  data-i18n="footer_quick_links"
+                >
+                  Quick Links
+                </h5>
+                <ul>
+                  <li class="pb-16">
+                    <a
+                      href="index.php"
+                      class="text-secondary font-sora hover:text-primary duration-500 capitalize"
+                      data-i18n="footer_home"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li class="pb-16">
+                    <a
+                      href="about.php"
+                      class="text-secondary font-sora hover:text-primary duration-500 capitalize"
+                      data-i18n="footer_about_us"
+                    >
+                      About Us
+                    </a>
+                  </li>
+
+                  <li class="pb-16">
+                    <a
+                      href="services.php"
+                      class="text-secondary font-sora hover:text-primary duration-500 capitalize"
+                      data-i18n="footer_services"
+                    >
+                      Services
+                    </a>
+                  </li>
+                  <li class="pb-16">
+                    <a
+                      href="articles.php"
+                      class="text-secondary font-sora hover:text-primary duration-500 capitalize"
+                      data-i18n="footer_articles"
+                    >
+                      Latest Articles
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="contact.php"
+                      class="text-secondary font-sora hover:text-primary duration-500 capitalize"
+                      data-i18n="footer_contact"
+                    >
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="lg:col-span-3 sm:col-span-6 col-span-12">
+              <div
+                class="lg:border-l lg:border-[#D8D8D8] xxl:pl-70 xl:pl-40 sm:pl-30 xxl:ml-40 sm:ml-20"
+              >
+                <h5
+                  class="font-bold xxl:text-2xxl text-xxl capitalize pb-18 font-sora text-secondary"
+                  data-i18n="footer_contact_us"
+                >
+                  Contact Us
+                </h5>
+                <ul>
+                  <li class="pb-16">
+                    <h6
+                      data-i18n="footer_address_label"
+                      class="pb-6 capitalize font-urbanist text-secondary text-base font-medium leading-[1.2] flex items-center"
+                    >
+                      <i class="mr-5">
+                        <svg
+                          width="10"
+                          height="12"
+                          viewBox="0 0 10 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5 3.00075C4.6066 3.00075 4.22204 3.11804 3.89494 3.33778C3.56784 3.55752 3.3129 3.86985 3.16235 4.23527C3.0118 4.6007 2.97241 5.00279 3.04916 5.39072C3.12591 5.77865 3.31535 6.13499 3.59352 6.41467C3.8717 6.69435 4.22611 6.88481 4.61195 6.96198C4.99779 7.03914 5.39773 6.99954 5.76118 6.84818C6.12463 6.69681 6.43528 6.44049 6.65384 6.11162C6.87241 5.78275 6.98906 5.3961 6.98906 5.00058C6.98906 4.47019 6.7795 3.96152 6.40648 3.58648C6.03346 3.21144 5.52753 3.00075 5 3.00075ZM5 6.00049C4.8033 6.00049 4.61102 5.94185 4.44747 5.83197C4.28392 5.7221 4.15645 5.56594 4.08117 5.38323C4.0059 5.20052 3.98621 4.99947 4.02458 4.8055C4.06295 4.61154 4.15767 4.43337 4.29676 4.29353C4.43585 4.15369 4.61306 4.05846 4.80598 4.01988C4.9989 3.98129 5.19886 4.00109 5.38059 4.07678C5.56232 4.15246 5.71764 4.28062 5.82692 4.44505C5.9362 4.60949 5.99453 4.80281 5.99453 5.00058C5.99453 5.26577 5.88975 5.5201 5.70324 5.70762C5.51673 5.89514 5.26377 6.00049 5 6.00049Z"
+                            fill="#021935"
+                          />
+                          <path
+                            d="M5 12C4.58128 12.0021 4.16813 11.9034 3.79516 11.712C3.42219 11.5206 3.10025 11.2422 2.85629 10.9001C0.961213 8.27179 0 6.29596 0 5.02707C0 3.69381 0.526784 2.41515 1.46447 1.47239C2.40215 0.529636 3.67392 0 5 0C6.32608 0 7.59785 0.529636 8.53553 1.47239C9.47322 2.41515 10 3.69381 10 5.02707C10 6.29596 9.03879 8.27179 7.14371 10.9001C6.89975 11.2422 6.57781 11.5206 6.20484 11.712C5.83187 11.9034 5.41873 12.0021 5 12ZM5 1.09141C3.96192 1.0926 2.96669 1.50773 2.23266 2.24574C1.49862 2.98375 1.08572 3.98436 1.08453 5.02807C1.08453 6.03298 2.02586 7.89132 3.73446 10.2606C3.87951 10.4615 4.0698 10.625 4.28976 10.7377C4.50973 10.8504 4.75311 10.9092 5 10.9092C5.24689 10.9092 5.49027 10.8504 5.71024 10.7377C5.9302 10.625 6.12049 10.4615 6.26554 10.2606C7.97414 7.89132 8.91547 6.03298 8.91547 5.02807C8.91428 3.98436 8.50138 2.98375 7.76734 2.24574C7.03331 1.50773 6.03808 1.0926 5 1.09141Z"
+                            fill="#021935"
+                          />
+                        </svg>
+                      </i>
+                      Address
+                    </h6>
+                    <span
+                      class="font-semibold font-urbanist text-secondary hover:text-primary duration-500"
+                      data-i18n="footer_address"
+                    >
+                      Rajendra Nagar, Road No. 01, Near Electricity Office,
+                      Patna – 16
+                    </span>
+                  </li>
+                  <li class="pb-16">
+                    <h6
+                      data-i18n="footer_phone_label"
+                      class="pb-6 capitalize font-urbanist text-secondary text-base font-medium leading-[1.2] flex items-center"
+                    >
+                      <i class="mr-5">
+                        <svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6.49103 0.501622C6.49103 0.368796 6.5438 0.24141 6.63772 0.147487C6.73164 0.0535649 6.85902 0.000799798 6.99185 0.000799798C8.31964 0.00225799 9.59264 0.530377 10.5315 1.46929C11.4704 2.40819 11.9985 3.68121 12 5.00903C12 5.14185 11.9472 5.26924 11.8533 5.36316C11.7594 5.45708 11.632 5.50985 11.4992 5.50985C11.3664 5.50985 11.239 5.45708 11.1451 5.36316C11.0511 5.26924 10.9984 5.14185 10.9984 5.00903C10.9972 3.94678 10.5747 2.92838 9.82357 2.17726C9.07246 1.42614 8.05408 1.00364 6.99185 1.00245C6.85902 1.00245 6.73164 0.94968 6.63772 0.855758C6.5438 0.761835 6.49103 0.634449 6.49103 0.501622ZM6.99185 3.00574C7.52314 3.00574 8.03268 3.2168 8.40837 3.59249C8.78405 3.96818 8.99511 4.47772 8.99511 5.00903C8.99511 5.14185 9.04787 5.26924 9.14179 5.36316C9.23571 5.45708 9.3631 5.50985 9.49592 5.50985C9.62875 5.50985 9.75613 5.45708 9.85005 5.36316C9.94397 5.26924 9.99674 5.14185 9.99674 5.00903C9.99594 4.21231 9.6791 3.44846 9.11575 2.88509C8.55239 2.32173 7.78855 2.00489 6.99185 2.00409C6.85902 2.00409 6.73164 2.05686 6.63772 2.15078C6.5438 2.2447 6.49103 2.37209 6.49103 2.50491C6.49103 2.63774 6.5438 2.76513 6.63772 2.85905C6.73164 2.95297 6.85902 3.00574 6.99185 3.00574ZM11.5458 8.38407C11.836 8.67511 11.999 9.06935 11.999 9.48037C11.999 9.89139 11.836 10.2856 11.5458 10.5767L11.09 11.102C6.98834 15.029 -2.99291 5.05009 0.873384 0.935335L1.44932 0.434512C1.74068 0.152387 2.1314 -0.00368303 2.53694 6.60132e-05C2.94249 0.00381505 3.33026 0.167082 3.61635 0.454545C3.63188 0.470071 4.55989 1.67555 4.55989 1.67555C4.83525 1.96484 4.98854 2.34912 4.98788 2.74851C4.98723 3.14791 4.83269 3.53169 4.55638 3.82007L3.97644 4.54927C4.29738 5.32911 4.76926 6.03784 5.36495 6.63474C5.96064 7.23165 6.66841 7.70496 7.44759 8.02748L8.18128 7.44403C8.4697 7.16793 8.85341 7.01357 9.25268 7.01301C9.65194 7.01245 10.0361 7.16573 10.3253 7.44102C10.3253 7.44102 11.5302 8.36854 11.5458 8.38407ZM10.8566 9.11227C10.8566 9.11227 9.65819 8.19025 9.64266 8.17473C9.53949 8.07242 9.40007 8.01502 9.25478 8.01502C9.10949 8.01502 8.97007 8.07242 8.8669 8.17473C8.85338 8.18875 7.84323 8.99357 7.84323 8.99357C7.77516 9.04776 7.69415 9.08327 7.60817 9.09662C7.5222 9.10997 7.43423 9.10069 7.35293 9.0697C6.34352 8.69386 5.42667 8.10548 4.66447 7.3444C3.90228 6.58332 3.31256 5.66732 2.93524 4.65845C2.90179 4.57604 2.89088 4.48621 2.90364 4.39819C2.9164 4.31017 2.95238 4.22714 3.00786 4.15763C3.00786 4.15763 3.81267 3.14697 3.82619 3.13395C3.92849 3.03077 3.98589 2.89136 3.98589 2.74606C3.98589 2.60076 3.92849 2.46135 3.82619 2.35817C3.81067 2.34315 2.88867 1.14368 2.88867 1.14368C2.78394 1.04978 2.64727 0.999488 2.50667 1.00312C2.36606 1.00675 2.23217 1.06403 2.13243 1.16321L1.5565 1.66403C-1.2691 5.06161 7.38048 13.2315 10.3578 10.4179L10.8141 9.89205C10.921 9.79301 10.9852 9.65629 10.9931 9.51077C11.0011 9.36525 10.9521 9.22235 10.8566 9.11227Z"
+                            fill="#021935"
+                          />
+                        </svg> </i
+                      >Phone Number
+                    </h6>
+                    <span
+                      ><a
+                        class="font-bold font-urbanist text-secondary hover:text-primary duration-500"
+                        href="tel:+917857811112"
+                        >78578 11112</a
+                      >
+                      |
+                      <a
+                        class="font-bold font-urbanist text-secondary hover:text-primary duration-500"
+                        href="tel:+917070992526"
+                        >70709 92526</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <h6
+                      data-i18n="footer_email_label"
+                      class="pb-6 capitalize font-urbanist text-secondary text-base font-medium leading-[1.2] flex items-center"
+                    >
+                      <i class="mr-5">
+                        <svg
+                          width="14"
+                          height="12"
+                          viewBox="0 0 14 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.0833 0H2.91667C2.1434 0.000866104 1.40208 0.288481 0.855295 0.799756C0.308514 1.31103 0.00092625 2.00422 0 2.72727L0 9.27273C0.00092625 9.99578 0.308514 10.689 0.855295 11.2002C1.40208 11.7115 2.1434 11.9991 2.91667 12H11.0833C11.8566 11.9991 12.5979 11.7115 13.1447 11.2002C13.6915 10.689 13.9991 9.99578 14 9.27273V2.72727C13.9991 2.00422 13.6915 1.31103 13.1447 0.799756C12.5979 0.288481 11.8566 0.000866104 11.0833 0ZM2.91667 1.09091H11.0833C11.4326 1.09155 11.7737 1.18992 12.0627 1.37335C12.3517 1.55678 12.5754 1.81688 12.705 2.12018L8.23783 6.29782C7.90908 6.60399 7.46399 6.77589 7 6.77589C6.53601 6.77589 6.09092 6.60399 5.76217 6.29782L1.295 2.12018C1.42459 1.81688 1.64827 1.55678 1.93728 1.37335C2.22628 1.18992 2.56738 1.09155 2.91667 1.09091ZM11.0833 10.9091H2.91667C2.45254 10.9091 2.00742 10.7367 1.67923 10.4298C1.35104 10.1229 1.16667 9.70672 1.16667 9.27273V3.54545L4.93733 7.06909C5.48487 7.57978 6.22665 7.86657 7 7.86657C7.77335 7.86657 8.51513 7.57978 9.06267 7.06909L12.8333 3.54545V9.27273C12.8333 9.70672 12.649 10.1229 12.3208 10.4298C11.9926 10.7367 11.5475 10.9091 11.0833 10.9091Z"
+                            fill="#021935"
+                          />
+                        </svg>
+                      </i>
+                      email Address
+                    </h6>
+                    <a
+                      class="font-bold font-urbanist text-secondary hover:text-primary duration-500"
+                      href="mailto:shankardiab@gmail.com"
+                      >shankardiab@gmail.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="lg:col-span-3 sm:col-span-6 col-span-12">
+              <div
+                class="lg:border-l lg:border-[#D8D8D8] xxl:pl-80 xl:pl-50 lg:pl-40 xxl:ml-40 lg:ml-20"
+              >
+                <h5
+                  data-i18n="footer_map"
+                  class="font-bold xxl:text-2xxl text-xxl capitalize pb-18 font-sora text-secondary"
+                >
+                  Location Map
+                </h5>
+
+                <div class="w-full h-[100]">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.8966551514422!2d85.15428047596967!3d25.60835011492377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58ef743ef35b%3A0x3d8255f955a23f6e!2sCare%20Centre!5e0!3m2!1sen!2sin!4v1774356902237!5m2!1sen!2sin"
+                    width="100%"
+                    height="100%"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="copyright py-20 max-md:flex-wrap flex md:justify-between justify-center border-t border-[#d7d7d7]"
+        >
+          <p class="text-base leading-30 text-gary font-normal">
+            <span data-i18n="footer_copyright">Copyright © </span
+            ><span class="current-year"> 2026 </span>
+            <span class="text-primary"
+              ><a href="javascript:void(0);"
+                ><span data-i18n="footer_brand">Shankar Diabetes.</span></a
+              ></span
+            >
+            <span data-i18n="footer_rights"> All Rights Reserved. </span>
+          </p>
+          <ul class="flex gap-x-25">
+            <li>
+              <a
+                href="javascript:void(0);"
+                class="text-gary text-base font-Urbanist hover:text-primary duration-500"
+                data-i18n="footer_terms"
+                >Terms & Conditions</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0);"
+                class="text-gary text-base font-Urbanist hover:text-primary duration-500"
+                data-i18n="footer_privacy"
+                >Privacy policy</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/plugins/counter/waypoints-min.js"></script>
+    <script src="assets/js/circle-progres.js"></script>
+    <script src="assets/plugins/nice-select/jquery.nice-select.js"></script>
+    <script src="assets/js/dz.carousel.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/preloader.js"></script>
+    <script src="assets/js/dz.ajax.js"></script>
+
+    <!-- Language System (load translations first, then logic) -->
+    <script src="./translation.js"></script>
+    <script src="./language.js"></script>
+  </body>
+</html>

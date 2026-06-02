@@ -1,0 +1,1825 @@
+<!doctype html>
+<html lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shankar Diabetes Care Centre</title>
+    <link rel="icon" href="assets/img/favicon.png" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/icons/flaticon/flaticon.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/icons/fontawesome/css/all.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="assets/icons/themify-icons/css/themify-icons.css"
+    />
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="assets/plugins/swiper/swiper-bundle.min.css" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&amp;family=Urbanist:ital,wght@0,100..900;1,100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+  </head>
+
+  <body class="selection:bg-primary selection:text-white">
+    <!-- nav and social icon section -->
+
+    <!-- preloader -->
+    <div class="preloader">
+      <div id="loader"></div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- header -->
+    <header
+      class="z-99 sticky-header main-bar-wraper navbar-expand-lg duretion-500"
+    >
+      <div class="main-bar">
+        <div class="container">
+          <div class="bottom-bar">
+            <div class="two-bar">
+              <div class="flex items-center justify-between">
+                <div class="logo">
+                  <a href="index.php">
+                    <img alt="logo" src="assets/img/logo-4.png" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a href="javascript:void(0)" id="mobile-menu" class="menu-start">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+            <nav class="navbar lg:block hidden">
+              <ul class="navbar-links">
+                <li class="menu-item-children">
+                  <a href="index.php" data-i18n="nav_home">Home</a>
+                </li>
+                <li class="navbar-dropdown">
+                  <a href="about.php" data-i18n="nav_about">About</a>
+                </li>
+                <li class="navbar-dropdown">
+                  <a href="services.php" data-i18n="nav_services">Services</a>
+                </li>
+                <li class="navbar-dropdown">
+                  <a href="facilities.php" data-i18n="nav_facilities"
+                    >Facilities</a
+                  >
+                </li>
+                <li class="navbar-dropdown menu-item-children">
+                  <a href="javascript:void(0);" data-i18n="nav_blog">Blog</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="articles.php" data-i18n="nav_articles"
+                        >Latest Articles</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-dropdown">
+                  <a href="contact.php" data-i18n="nav_contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header-menu-right">
+              <!-- Language Switcher -->
+              <div class="lang-switcher-wrapper">
+                <button class="language-btn">
+                  <img src="assets/img/language.svg" width="15px" alt="" />
+                  <span class="lang-label">हिंदी</span>
+                  <i
+                    class="fa-solid fa-chevron-down"
+                    style="font-size: 11px"
+                  ></i>
+                </button>
+                <div
+                  class="lang-dropdown"
+                  style="
+                    display: none;
+                    position: absolute;
+                    top: calc(100% + 8px);
+                    right: 0;
+                    background: #fff;
+                    border: 1px solid #e5e7eb;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+                    min-width: 130px;
+                    z-index: 9999;
+                    overflow: hidden;
+                  "
+                >
+                  <div
+                    class="lang-option"
+                    data-lang="hi"
+                    style="
+                      padding: 10px 18px;
+                      cursor: pointer;
+                      font-size: 14px;
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      transition: background 0.2s;
+                    "
+                  >
+                    <span style="font-size: 18px">🇮🇳</span> हिंदी
+                  </div>
+                  <div
+                    class="lang-option"
+                    data-lang="en"
+                    style="
+                      padding: 10px 18px;
+                      cursor: pointer;
+                      font-size: 14px;
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      transition: background 0.2s;
+                    "
+                  >
+                    <span style="font-size: 18px">🇬🇧</span> English
+                  </div>
+                </div>
+              </div>
+              <a href="contact.php" class="btn xl:block hidden">
+                <span data-i18n="nav_book_btn"
+                  >Book Appointment<i class="fa-solid fa-arrow-right"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div class="mobile-nav" id="mobile-nav">
+          <div class="res-log mb-30">
+            <a href="index.php">
+              <img alt="logo" src="assets/img/logo-4.png" class="w-auto" />
+            </a>
+          </div>
+          <ul>
+            <li><a href="index.php" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.php" data-i18n="nav_about">About</a></li>
+            <li>
+              <a href="services.php" data-i18n="nav_services">Services</a>
+            </li>
+            <li>
+              <a href="facilities.php" data-i18n="nav_facilities">Facilities</a>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="javascript:void(0)" data-i18n="nav_blog">Blog</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="articles.php" data-i18n="nav_articles"
+                    >Latest Articles</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="contact.php" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+          <!-- Mobile language switcher -->
+          <div style="padding: 16px 0 8px; display: flex; gap: 10px">
+            <button
+              class="lang-option-mobile"
+              data-lang="hi"
+              style="
+                flex: 1;
+                padding: 8px;
+                border: 1px solid #e5e7eb;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 13px;
+                background: #fff;
+              "
+            >
+              🇮🇳 हिंदी
+            </button>
+            <button
+              class="lang-option-mobile"
+              data-lang="en"
+              style="
+                flex: 1;
+                padding: 8px;
+                border: 1px solid #e5e7eb;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 13px;
+                background: #fff;
+              "
+            >
+              🇬🇧 English
+            </button>
+          </div>
+          <a href="JavaScript:void(0)" id="res-cross"></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sticky Social Media Icons - Right Side -->
+    <div class="sticky-social-icons">
+      <a
+        href="https://www.facebook.com/Shankardiabetescare/"
+        class="social-icon"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a
+        href="https://x.com/shankardiabetes/"
+        class="social-icon"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/shankardiabetescare/"
+        class="social-icon"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a
+        href="https://www.youtube.com/@Shankardiabetescarecentre"
+        class="social-icon"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/company/shankar-diabetes-care-centre-patna/"
+        class="social-icon"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a
+        href="https://www.threads.com/@shankardiabetescare/"
+        class="social-icon"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-threads"></i>
+      </a>
+    </div>
+
+    <!-- Banner section -->
+    <section
+      class="pt-90 relative max-lg:bg-[right_center] bg-[#f4f4f4] bg-[url(../img/bannr-bg-img.png)] about-banner overflow-hidden"
+    >
+      <div class="container">
+        <div class="row items-center">
+          <div class="lg:w-1/2 w-full">
+            <div class="relative max-md:text-center">
+              <h2
+                data-i18n="about_page_banner"
+                class="xxl:text-7.7xl xl:text-6.3xl md:text-5.2xl sm:text-4.75xl text-4.6xl font-bold capitalize font-sora text-secondary"
+              >
+                About Us
+              </h2>
+              <img
+                src="assets/img/shap-three-1.png"
+                alt="banner-shap"
+                class="absolute w-46 w-35 -top-15 -left-32 max-md:hidden animate-topshap"
+              />
+            </div>
+            <ol
+              class="mb-16 flex items-center max-md:justify-center max-md:mb-40"
+            >
+              <li
+                class="xxl:text-xxl md:text-xl text-sm text-secondary font-sora capitalize"
+              >
+                <a href="index.php" data-i18n="breadcrumb_home"> Home </a>
+              </li>
+              <li
+                data-i18n="about_page_banner"
+                class="xxl:text-xxl md:text-xl text-sm text-gary capitalize before:content-['-'] before:float-left before:text-gary before:px-10"
+                aria-current="page"
+              >
+                About Us
+              </li>
+            </ol>
+          </div>
+          <div class="lg:w-1/2 w-full">
+            <div>
+              <img
+                id="about-banner-img"
+                src="assets/img/Banner-07-hi.png"
+                alt="banner image"
+                class="xxl:max-w-[unset]"
+              />
+              <ul class="shaps">
+                <li class="absolute"></li>
+                <li class="absolute">
+                  <img
+                    src="assets/img/bannr-shap.png"
+                    alt="img"
+                    class="animate-topshap max-md:hidden"
+                  />
+                </li>
+                <li class="absolute"></li>
+                <li class="absolute">
+                  <img
+                    src="assets/img/shaps-5.png"
+                    alt="img"
+                    class="animate-fa-spin max-md:hidden"
+                  />
+                </li>
+                <li class="absolute">
+                  <img
+                    src="assets/img/shaps-6.png"
+                    alt="img"
+                    class="animate-fa-spin max-md:hidden"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Excellence section -->
+    <section class="lg:py-120 md:py-80 py-60">
+      <div class="container">
+        <div class="grid grid-cols-12 gap-25">
+          <div class="lg:col-span-6 col-span-12">
+            <div class="w-full group">
+              <figure class="overflow-hidden">
+                <img
+                  src="assets/img/about-img.jpg"
+                  alt="about us"
+                  class="w-full group-hover:scale-[1.1] group-hover:rotate-[3deg] duration-500"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="lg:col-span-6 col-span-12">
+            <div class="lg:ml-16">
+              <span
+                class="capitalize font-semibold xxl:text-xxl xl:text-xl sm:text-lg text-base text-primary font-sora pb-6 block"
+              >
+                <div class="flex text-center items-center gap-4">
+                  <span
+                    ><img
+                      src="assets/img/steth.png"
+                      style="width: 30px"
+                      alt="" /></span
+                  ><span
+                    class="text-2xl"
+                    data-i18n="about_page_excellence_title"
+                    >Excellence in Diabetes Care Since 2002</span
+                  >
+                </div>
+              </span>
+              <h2
+                data-i18n="about_page_excellence_heading"
+                class="capitalize font-semibold xxl:text-xxl xl:text-xl sm:text-lg text-base text-secondary font-sora pb-6 block"
+              >
+                Led by Prof. Dr. Anand Shankar, Founder of Shankar Diabetes Care
+                Centre.
+              </h2>
+              <p
+                data-i18n="about_page_excellence_desc"
+                class="text-base leading-28 text-gary font-normal xl:mt-25 mt-20 leading-30"
+              >
+                At Shankar Diabetes Care Centre, we combine experience, advanced
+                technology, and personalized care to help you manage diabetes
+                effectively and live a healthier life. Our expert team is
+                dedicated to guiding you at every step of your wellness journey.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-12 lg:mt-40 mt-15 gap-25">
+          <div class="lg:col-span-5 col-span-12">
+            <div class="max-lg:pb-15">
+              <ul class="pt-40 pb-34 text-sm">
+                <li
+                  data-i18n="about_li_1"
+                  class="pb-21 font-semibold font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                  Advanced diagnostics including FibroScan, Lunar DXA, ECG, and
+                  Fundus examination
+                </li>
+                <li
+                  data-i18n="about_li_2"
+                  class="pb-21 font-semibold font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                  Accurate diagnosis supported by modern medical technology
+                </li>
+                <li
+                  data-i18n="about_li_3"
+                  class="pb-21 font-semibold font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                  Evidence-based treatment for effective diabetes management
+                </li>
+                <li
+                  data-i18n="about_li_4"
+                  class="pb-21 font-semibold font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                  Focus on controlling blood sugar levels consistently
+                </li>
+                <li
+                  data-i18n="about_li_5"
+                  class="pb-21 font-semibold font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                  Emphasis on overall health improvement
+                </li>
+                <li
+                  data-i18n="about_li_6"
+                  class="pb-21 font-semibold font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                  Prevention of long-term diabetes complications
+                </li>
+                <li
+                  data-i18n="about_li_7"
+                  class="pb-21 font-semibold font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                  Continuous care with regular monitoring and follow-ups
+                </li>
+                <li
+                  data-i18n="about_li_8"
+                  class="pb-21 font-semibold font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                  Guidance on lifestyle and daily habits for better living
+                </li>
+              </ul>
+              <div class="flex gap-4">
+                <div class="flex items-center">
+                  <a href="tel:+917857811112" class="btn two"
+                    ><span data-i18n="call_now">
+                      Call Now <i class="fa-solid fa-phone"></i></span
+                  ></a>
+                </div>
+                <div class="flex items-center">
+                  <a href="contact.php" class="btn"
+                    ><span data-i18n="book_appointment"
+                      >Book Appointment<i
+                        class="fa-solid fa-arrow-right"
+                      ></i></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-4 col-span-12">
+            <div class="w-full group">
+              <figure class="overflow-hidden">
+                <img
+                  src="assets/img/about-img-2.png"
+                  alt="about us"
+                  class="w-full group-hover:scale-[1.1] group-hover:rotate-[3deg] duration-500"
+                />
+              </figure>
+            </div>
+          </div>
+          <div
+            class="lg:col-span-3 col-span-12 flex justify-center flex-wrap max-lg:gap-30"
+          >
+            <div class="sm:pb-17 lg:flex justify-center flex-wrap">
+              <div class="xl:w-150 progressbar text-center">
+                <div class="circle" data-percent="100">
+                  <div
+                    class="text-secondary absolute top-[44%] left-1/2 -mt-20 -ml-86 w-full text-center xl:leading-40 leading-28 text-4xl xl:[transform:translate(10px,10px)] [transform:translate(5px,10px)] font-bold"
+                  >
+                    100%
+                  </div>
+                </div>
+              </div>
+              <h2
+                data-i18n="stat_personalized"
+                class="xxl:text-lg sm:text-base text-sm font-semibold capitalize font-sora text-secondary xxl:pt-10"
+              >
+                Personalized Care
+              </h2>
+            </div>
+            <div class="sm:pb-17 lg:flex justify-center flex-wrap">
+              <div class="xl:w-150 progressbar text-center">
+                <div class="circle" data-percent="98">
+                  <div
+                    class="text-secondary absolute top-[44%] left-1/2 -mt-20 -ml-86 w-full text-center xl:leading-40 leading-28 text-4xl xl:[transform:translate(10px,10px)] [transform:translate(5px,10px)] font-bold"
+                  >
+                    98%
+                  </div>
+                </div>
+              </div>
+              <h2
+                data-i18n="stat_satisfaction"
+                class="xxl:text-lg sm:text-base text-sm font-semibold capitalize font-sora text-secondary xxl:pt-10"
+              >
+                Patient Satisfaction
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="xxl:pb-160 lg:pb-60 md:pb-40 pb-40">
+      <div class="container">
+        <div class="grid grid-cols-12 gap-25">
+          <div class="lg:col-span-6 col-span-12">
+            <div
+              class="text-end relative before:absolute before:w-[71%] before:h-full before:bg-primary before:-left-38 before:z-[-1] before:rotate-[5deg] before:top-[13%] mt-50 lg:mr-40 max-lg:before:hidden"
+            >
+              <figure class="overflow-hidden">
+                <img
+                  src="assets/img/doctorwithbg.jpg"
+                  alt="founder image"
+                  class="w-full"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="lg:col-span-6 col-span-12">
+            <div class="pb-40 w-[fit-content]">
+              <span
+                class="capitalize font-semibold xxl:text-xxl xl:text-xl sm:text-lg text-base text-primary font-sora pb-6 block"
+              >
+                <div class="flex text-center items-center gap-4">
+                  <span
+                    ><img
+                      src="assets/img/steth.png"
+                      style="width: 30px"
+                      alt="" /></span
+                  ><span class="text-2xl" data-i18n="founder_label"
+                    >Our Founder</span
+                  >
+                </div>
+              </span>
+              <h2
+                data-i18n="founder_heading"
+                class="xl:text-4xl md:text-3xl sm:text-2xl text-2xl font-semibold text-secondary font-sora leading-[1.2]"
+              >
+                Meet Our Founder – Prof. Dr. Anand Shankar
+              </h2>
+              <p
+                data-i18n="founder_desc"
+                class="text-base leading-28 text-gary font-normal border-l-3 border-primary pl-27 mt-25"
+              >
+                With over 20+ years of experience in diabetes care, Dr. Anand
+                Shankar has been at the forefront of advanced treatments,
+                ensuring patients receive the highest quality care. His
+                dedication, expertise, and compassionate approach have made
+                Shankar Diabetes Care Centre a trusted name in diabetes
+                management.
+              </p>
+            </div>
+
+            <div class="max-lg:pb-15">
+              <ul class="pt-10 pb-10 text-sm">
+                <li
+                  data-i18n="doctor_li_1"
+                  class="pb-21 font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                  Founder & Chief Consultant, Shankar Diabetes Care Centre
+                </li>
+                <li
+                  data-i18n="doctor_li_2"
+                  class="pb-21 font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                  Former Consultant at Apollo Hospital, Chennai & Sir Ganga Ram
+                  Hospital, Delhi
+                </li>
+                <li
+                  data-i18n="doctor_li_3"
+                  class="pb-21 font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                  Expertise: Diabetes, Thyroid & Endocrinology
+                </li>
+                <li
+                  data-i18n="doctor_li_4"
+                  class="pb-21 font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                  Fellowships & Accreditations: Member – Association of
+                  Physicians of India (API), Research Society for the Study of
+                  Diabetes in India (RSSDI), Diabetes in Pregnancy Study Group
+                  India (DIPSI).
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- mission & vision section  -->
+
+    <section class="xxl:pb-180 lg:pb-100 md:pb-60 pb-60">
+      <div class="container">
+        <div class="grid grid-cols-12 gap-25">
+          <!-- Text Content - Now on the LEFT -->
+          <div class="lg:col-span-6 col-span-12">
+            <div class="pb-10 w-[fit-content]">
+              <span
+                class="capitalize font-semibold xxl:text-xxl xl:text-xl sm:text-lg text-base text-primary font-sora pb-6 block"
+              >
+                <div class="flex text-center items-center gap-4">
+                  <span
+                    ><img
+                      src="assets/img/steth.png"
+                      style="width: 30px"
+                      alt="" /></span
+                  ><span class="text-2xl" data-i18n="mission_vision_label"
+                    >Our Mission & Vision</span
+                  >
+                </div>
+              </span>
+              <h2
+                data-i18n="mission_title"
+                class="xl:text-2xl md:text-1.5xl sm:text-xl text-xl font-semibold text-secondary font-sora leading-[1.2]"
+              >
+                Mission :
+              </h2>
+              <p
+                data-i18n="mission_desc"
+                class="text-base leading-28 text-gary font-normal border-l-3 border-primary pl-27 mt-20"
+              >
+                To provide trusted, comprehensive, and personalized diabetes
+                care using the latest diagnostic and treatment technologies.
+              </p>
+              <h2
+                data-i18n="vision_title"
+                class="xl:text-2xl md:text-1.5xl sm:text-xl text-xl font-semibold text-secondary mt-20 font-sora leading-[1.2]"
+              >
+                Vision :
+              </h2>
+              <p
+                data-i18n="vision_desc"
+                class="text-base leading-28 text-gary font-normal border-l-3 border-primary pl-27 mt-20"
+              >
+                To be a leading center in diabetes management, empowering
+                patients to lead healthier, happier lives.
+              </p>
+            </div>
+          </div>
+
+          <!-- Image - Now on the RIGHT -->
+          <div class="lg:col-span-6 col-span-12">
+            <div
+              class="text-end relative before:absolute before:w-[71%] before:h-full before:bg-primary before:-left-38 before:z-[-1] before:rotate-[5deg] before:top-[13%] mt-50 lg:mr-40 max-lg:before:hidden"
+            >
+              <figure class="overflow-hidden">
+                <img
+                  src="assets/img/Missionandvision-5.png"
+                  alt="mission & vision"
+                  class="w-full"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="lg:pt-80 md:pt-60 pt-40 mb-[120px]">
+      <div class="container">
+        <div class="xl:pb-50 lg:pb-40 pb-30 w-[fit-content]">
+          <span
+            class="capitalize font-semibold xxl:text-xxl xl:text-xl sm:text-lg text-base text-primary font-sora pb-5 block"
+          >
+            <div class="flex text-center items-center gap-4">
+              <span
+                ><img src="assets/img/steth.png" style="width: 30px" alt=""
+              /></span>
+              <span class="text-2xl" data-i18n="facilities_label"
+                >Facilities &amp; Technology</span
+              >
+            </div>
+          </span>
+          <h2
+            class="xl:text-5xl md:text-3xl sm:text-3xl text-2.5xl font-semibold text-secondary font-sora leading-[1.2]"
+            data-i18n="facilities_heading"
+          >
+            Advanced Diagnostic Facilities.
+          </h2>
+        </div>
+        <div class="swiper services-slider">
+          <div class="swiper-wrapper">
+            <!-- Facility 1: FibroScan -->
+            <div class="swiper-slide group">
+              <div
+                class="services-box shadow-[0px_0px_15px_0px_rgba(0,0,0,0.07)] relative xxl:p-40 p-30 xxl:m-15 m-10 before:w-full before:h-0 before:bg-primary before:absolute before:bottom-0 before:left-0 before:duration-500"
+              >
+                <div class="flex items-center gap-18 mb-25">
+                  <div
+                    class="size-90 flex items-center justify-center relative rounded-full overflow-hidden shrink-0"
+                  >
+                    <img
+                      src="assets/img/DoctorWithFibroScan.png"
+                      alt="FibroScan Icon"
+                      class="w-12 h-12 object-contain group-hover:scale-110 duration-300"
+                    />
+                  </div>
+                  <h4
+                    class="xl:text-xl font-sora text-secondary font-medium leading-[1.2]"
+                  >
+                    <a
+                      href="javascript:void(0)"
+                      class="xxl:text-xl text-md font-bold font-sora relative text-secondary duration-500"
+                      data-i18n="facility_1_title"
+                      >FibroScan</a
+                    >
+                  </h4>
+                </div>
+                <p
+                  class="service-text pb-8 relative text-base leading-32 text-[#6f6f6f] font-normal duration-500"
+                  data-i18n="facility_1_desc"
+                >
+                  FibroScan is a non-invasive test that measures liver stiffness
+                  to detect fibrosis and liver damage early.
+                </p>
+                <br />
+                <a
+                  href="javascript:void(0)"
+                  class="read-toggle relative font-bold text-secondary font-sora duration-500"
+                  data-i18n="read_more"
+                  >Read More</a
+                >
+              </div>
+            </div>
+
+            <!-- Facility 2: Lunar DXA -->
+            <div class="swiper-slide group">
+              <div
+                class="services-box shadow-[0px_0px_15px_0px_rgba(0,0,0,0.07)] relative xxl:p-40 p-30 xxl:m-15 m-10 before:w-full before:h-0 before:bg-primary before:absolute before:bottom-0 before:left-0 before:duration-500"
+              >
+                <div class="flex items-center gap-18 mb-25">
+                  <div
+                    class="group-hover:bg-white size-90 flex items-center justify-center relative rounded-full overflow-hidden shrink-0"
+                  >
+                    <img
+                      src="assets/img/DoctorWithLunar.png"
+                      alt="Lunar DXA Scanner"
+                      class="w-12 h-12 object-contain group-hover:scale-110 duration-300"
+                    />
+                  </div>
+                  <div style="width: 60%">
+                    <h4
+                      class="xl:text-xl font-sora text-secondary font-medium leading-[1.2]"
+                    >
+                      <a
+                        href="javascript:void(0)"
+                        class="xxl:text-xl text-md font-bold font-sora relative text-secondary duration-500"
+                        data-i18n="facility_2_title"
+                        >Lunar DXA Scanner</a
+                      >
+                    </h4>
+                  </div>
+                </div>
+                <p
+                  class="service-text pb-8 relative text-base leading-32 text-[#6f6f6f] font-normal duration-500"
+                  data-i18n="facility_2_desc"
+                >
+                  A Lunar DXA Scanner is an advanced imaging device used to
+                  measure bone mineral density and assess overall bone health.
+                </p>
+                <br />
+                <a
+                  href="javascript:void(0)"
+                  class="read-toggle relative font-bold text-secondary font-sora duration-500"
+                  data-i18n="read_more"
+                  >Read More</a
+                >
+              </div>
+            </div>
+
+            <!-- Facility 3: ECG -->
+            <div class="swiper-slide group">
+              <div
+                class="services-box shadow-[0px_0px_15px_0px_rgba(0,0,0,0.07)] relative xxl:p-40 p-30 xxl:m-15 m-10 before:w-full before:h-0 before:bg-primary before:absolute before:bottom-0 before:left-0 before:duration-500"
+              >
+                <div class="flex items-center gap-18 mb-25">
+                  <div
+                    class="group-hover:bg-white size-90 flex items-center justify-center relative rounded-full overflow-hidden shrink-0"
+                  >
+                    <img
+                      src="assets/img/DoctorWithECG.png"
+                      alt="ECG"
+                      class="w-12 h-12 object-contain group-hover:scale-110 duration-300"
+                    />
+                  </div>
+                  <h4
+                    class="xl:text-xl font-sora text-secondary font-medium leading-[1.2]"
+                  >
+                    <a
+                      href="javascript:void(0)"
+                      class="xxl:text-xl text-md font-bold font-sora relative text-secondary duration-500"
+                      data-i18n="facility_3_title"
+                      >ECG</a
+                    >
+                  </h4>
+                </div>
+                <p
+                  class="service-text pb-8 relative text-base leading-32 text-[#6f6f6f] font-normal duration-500"
+                  data-i18n="facility_3_desc"
+                >
+                  An ECG records the electrical activity of the heart and helps
+                  detect cardiac conditions.
+                </p>
+                <br />
+                <a
+                  href="javascript:void(0)"
+                  class="read-toggle relative font-bold text-secondary font-sora duration-500"
+                  data-i18n="read_more"
+                  >Read More</a
+                >
+              </div>
+            </div>
+
+            <!-- Facility 4: Diabetic Foot -->
+            <div class="swiper-slide group">
+              <div
+                class="services-box shadow-[0px_0px_15px_0px_rgba(0,0,0,0.07)] relative xxl:p-40 p-30 xxl:m-15 m-10 before:w-full before:h-0 before:bg-primary before:absolute before:bottom-0 before:left-0 before:duration-500"
+              >
+                <div class="flex items-center gap-18 mb-25">
+                  <div
+                    class="group-hover:bg-white size-90 flex items-center justify-center relative rounded-full overflow-hidden shrink-0"
+                  >
+                    <img
+                      src="assets/img/DoctorWithFootMachine.png"
+                      alt="Diabetic Foot Check-up"
+                      class="w-12 h-12 object-contain group-hover:scale-110 duration-300"
+                    />
+                  </div>
+                  <div style="width: 60%">
+                    <h4
+                      class="xl:text-xl font-sora text-secondary font-medium leading-[1.2]"
+                    >
+                      <a
+                        href="javascript:void(0)"
+                        class="xxl:text-xl text-md font-bold font-sora relative text-secondary duration-500"
+                        data-i18n="facility_4_title"
+                        >Diabetic Foot Check-up</a
+                      >
+                    </h4>
+                  </div>
+                </div>
+                <p
+                  class="service-text pb-8 relative text-base leading-32 text-[#6f6f6f] font-normal duration-500"
+                  data-i18n="facility_4_desc"
+                >
+                  A diabetic foot check-up detects early signs of nerve damage
+                  and poor blood circulation.
+                </p>
+                <br />
+                <a
+                  href="javascript:void(0)"
+                  class="read-toggle relative font-bold text-secondary font-sora duration-500"
+                  data-i18n="read_more"
+                  >Read More</a
+                >
+              </div>
+            </div>
+
+            <!-- Facility 5: Fundus -->
+            <div class="swiper-slide group">
+              <div
+                class="services-box shadow-[0px_0px_15px_0px_rgba(0,0,0,0.07)] relative xxl:p-40 p-30 xxl:m-15 m-10 before:w-full before:h-0 before:bg-primary before:absolute before:bottom-0 before:left-0 before:duration-500"
+              >
+                <div class="flex items-center gap-18 mb-25">
+                  <div
+                    class="group-hover:bg-white size-90 flex items-center justify-center relative rounded-full overflow-hidden shrink-0"
+                  >
+                    <img
+                      src="assets/img/DoctorWithFundusMachine.png"
+                      alt="Fundus Examination"
+                      class="w-12 h-12 object-contain group-hover:scale-110 duration-300"
+                    />
+                  </div>
+                  <div style="width: 60%">
+                    <h4
+                      class="xl:text-xl font-sora text-secondary font-medium leading-[1.2]"
+                    >
+                      <a
+                        href="javascript:void(0)"
+                        class="xxl:text-xl text-md font-bold font-sora relative text-secondary duration-500"
+                        data-i18n="facility_5_title"
+                        >Fundus Examination</a
+                      >
+                    </h4>
+                  </div>
+                </div>
+                <p
+                  class="service-text pb-8 relative text-base leading-32 text-[#6f6f6f] font-normal duration-500"
+                  data-i18n="facility_5_desc"
+                >
+                  A fundus examination checks the retina, optic nerve, and blood
+                  vessels at the back of the eye.
+                </p>
+                <br />
+                <a
+                  href="javascript:void(0)"
+                  class="read-toggle relative font-bold text-secondary font-sora duration-500"
+                  data-i18n="read_more"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button">
+            <div class="services-swiper-button-next">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="services-swiper-button-prev">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us section -->
+    <section class="xxl:py-140 lg:pb-80 lg:pt-100 md:pb-60 pb-20">
+      <div class="container">
+        <div class="grid grid-cols-12 gap-25">
+          <div class="lg:col-span-6 col-span-12">
+            <div
+              class="text-end relative before:absolute before:w-[71%] before:h-full before:bg-primary before:-left-38 before:z-[-1] before:rotate-[5deg] before:top-[13%] mt-50 lg:mr-40 max-lg:before:hidden"
+            >
+              <figure class="overflow-hidden">
+                <img
+                  src="assets/img/WhyChooseus-1.png"
+                  alt="why choose us"
+                  class="w-full"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="lg:col-span-6 col-span-12">
+            <div class="pb-40 w-[fit-content]">
+              <span
+                class="capitalize font-semibold xxl:text-xxl xl:text-xl sm:text-lg text-base text-primary font-sora pb-6 block"
+              >
+                <div class="flex text-center items-center gap-4">
+                  <span
+                    ><img
+                      src="assets/img/steth.png"
+                      style="width: 30px"
+                      alt="why choose us" /></span
+                  ><span class="text-2xl" data-i18n="why_choose_label"
+                    >Why Choose Us</span
+                  >
+                </div>
+              </span>
+              <h2
+                data-i18n="why_choose_heading"
+                class="xl:text-4xl md:text-3xl sm:text-2xl text-2xl font-semibold text-secondary font-sora leading-[1.2]"
+              >
+                Prof. Dr. Anand Shankar – Diabetes Specialist
+              </h2>
+              <p
+                data-i18n="why_choose_desc"
+                class="text-base leading-28 text-gary font-normal border-l-3 border-primary pl-27 mt-25"
+              >
+                With over 20+ years of experience, we combine clinical
+                expertise, modern diagnostic technology, and personalized care
+                to deliver precise and effective diabetes management focused on
+                long-term health and well-being.
+              </p>
+            </div>
+
+            <div class="max-lg:pb-15">
+              <ul class="pt-10 pb-10 text-sm">
+                <li
+                  data-i18n="why_choose_li_1"
+                  class="pb-21 font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                  Personalized care tailored to your health needs
+                </li>
+                <li
+                  data-i18n="why_choose_li_2"
+                  class="pb-21 font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                  Experienced team led by Prof. Dr. Anand Shankar
+                </li>
+                <li
+                  data-i18n="why_choose_li_3"
+                  class="pb-21 font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                  State-of-the-art diagnostic technologies
+                </li>
+                <li
+                  data-i18n="why_choose_li_4"
+                  class="pb-21 font-sora pl-20 relative text-secondary before:absolute before:size-10 before:bg-primary before:rounded-full before:left-0 before:top-8 max-xl:text-sm"
+                >
+                  Trusted by patients Since 2002
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonial section -->
+    <section class="lg:pb-100 lg:pt-60 md:pt-40 md:pb-60 py-40">
+      <div class="container">
+        <div class="text-center lg:mx-auto lg:w-[60%] w-full pb-50">
+          <span
+            class="pb-10 block font-sora font-semibold capitalize xxl:text-xxl xl:text-xl sm:text-lg text-base text-primary"
+          >
+            <div class="flex text-center justify-center items-center gap-4">
+              <span
+                ><img
+                  src="assets/img/steth.png"
+                  style="width: 30px"
+                  alt="Testimonials"
+              /></span>
+              <span class="text-2xl" data-i18n="testimonials_label"
+                >Testimonials</span
+              >
+            </div>
+          </span>
+          <h2
+            class="xl:text-5xl md:text-4xl sm:text-3xl text-2.5xl font-semibold text-secondary font-sora leading-[1.2]"
+            data-i18n="testimonials_heading"
+          >
+            What Our Patients Say?
+          </h2>
+        </div>
+        <div
+          class="swiper review-slider swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden relative lg:before:absolute lg:before:w-px lg:before:h-full lg:before:bg-[#bfbfbf] lg:before:left-1/2"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="relative">
+                <ul class="flex text-sm gap-4 mb-10">
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                </ul>
+                <p
+                  class="md:text-2xl sm:text-xl text-lg leading-34 font-medium pb-21 text-gary"
+                  data-i18n="review_1"
+                >
+                  Thanks to Prof. Dr. Anand Shankar and his team, my diabetes is
+                  now under control.
+                </p>
+                <div class="flex items-center gap-x-15">
+                  <img
+                    src="assets/img/review-img-1.jpg"
+                    alt="testimonials image"
+                    class="rounded-full"
+                  />
+                  <div>
+                    <h5
+                      class="text-base font-bold pb-4 text-secondary font-sora leading-[1.2]"
+                    >
+                      Nandani Kumari
+                    </h5>
+                  </div>
+                </div>
+                <img
+                  src="assets/img/quotes.png"
+                  alt="quotes"
+                  class="absolute right-[0%] bottom-[3%] bg-transparent mt-50"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="relative">
+                <ul class="flex text-sm gap-4 mb-10">
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                </ul>
+                <p
+                  class="md:text-2xl sm:text-xl text-lg leading-34 font-medium pb-21 text-gary"
+                  data-i18n="review_2"
+                >
+                  The clinic's facilities are top-notch, and the staff is
+                  extremely supportive.
+                </p>
+                <div class="flex items-center gap-x-15">
+                  <img
+                    src="assets/img/review-img-2.jpg"
+                    alt="testimonials image"
+                    class="rounded-full"
+                  />
+                  <div>
+                    <h5
+                      class="text-base font-bold pb-4 text-secondary font-sora leading-[1.2]"
+                    >
+                      Prashant Raj
+                    </h5>
+                  </div>
+                </div>
+                <img
+                  src="assets/img/quotes.png"
+                  alt="quotes"
+                  class="absolute right-[0%] bottom-[3%] bg-transparent mt-50"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="relative">
+                <ul class="flex text-sm gap-4 mb-10">
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                  <li><i class="fa-solid fa-star text-yellow text-lg"></i></li>
+                </ul>
+                <p
+                  class="md:text-2xl sm:text-xl text-lg leading-34 font-medium pb-21 text-gary"
+                  data-i18n="review_3"
+                >
+                  I recommend Shankar Diabetes Care Centre to anyone looking for
+                  trusted diabetes care.
+                </p>
+                <div class="flex items-center gap-x-15">
+                  <img
+                    src="assets/img/team-3.png"
+                    alt="testimonials image"
+                    class="rounded-full"
+                  />
+                  <div>
+                    <h5
+                      class="text-base font-bold pb-4 text-secondary font-sora leading-[1.2]"
+                    >
+                      Kundan Kumar
+                    </h5>
+                  </div>
+                </div>
+                <img
+                  src="assets/img/quotes.png"
+                  alt="quotes"
+                  class="absolute right-[0%] bottom-[3%] bg-transparent mt-50"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:absolute relative bg-[#F4F4FF] z-[1] size-78 rounded-full left-1/2 lg:top-1/2 [transform:translate(-50%,-50%)] max-lg:mt-48"
+          >
+            <div class="swiper-button-next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ's -->
+
+    <section class="xxl:py-80 lg:py-60 md:py-40 py-40">
+      <div class="container">
+        <div class="xl:pb-50 lg:pb-40 pb-30 text-center m-auto md:w-[60%]">
+          <h3
+            class="xxl:text-5xl xl:text-4.65xl lg:text-3.8xl md:text-4xl sm:text-3xl text-2.5xl font-semibold font-sora text-secondary leading-[1.2]"
+          >
+            Frequently Asked Questions
+          </h3>
+        </div>
+        <div class="accordion xxl:pt-50 pt-40 xxl:pb-25 pb-15">
+          <div class="accordion-item active">
+            <a
+              href="javascript:void(0)"
+              class="heading block capitalize text-black font-bold text-2xl relative duration-500 w-full"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="about_faq1_ques">
+                What services are offered at Shankar Diabetes Care Centre?
+              </div>
+            </a>
+
+            <div
+              class="content pb-24 pt-0 bg-[#24243500]"
+              style="display: block"
+            >
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="about_faq1_ans"
+              >
+                We provide comprehensive diabetes care including diabetes
+                consultation, blood sugar management, FibroScan, ECG, Foot
+                Check-ups, Fundus Eye Check-ups, Lunar DXA Scan, lifestyle
+                counseling, and preventive diabetes care services.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a
+              href="javascript:void(0)"
+              class="heading block w-full capitalize text-secondary font-bold text-2xl relative duration-500"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="about_faq2_ques">
+                Who is Dr. Anand Shankar?
+              </div>
+            </a>
+
+            <div class="content pb-24">
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="about_faq2_ans"
+              >
+                Dr. Anand Shankar is an experienced diabetes specialist with
+                over 24 years of expertise in diabetes care and management.
+                Since 2002, he has been dedicated to providing advanced and
+                compassionate diabetes treatment in Bihar.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a
+              href="javascript:void(0)"
+              class="heading block w-full capitalize text-secondary font-bold text-2xl relative duration-500"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="about_faq3_ques">
+                Why is regular diabetes monitoring important?
+              </div>
+            </a>
+
+            <div class="content pb-24">
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="about_faq3_ans"
+              >
+                Regular monitoring helps maintain healthy blood sugar levels,
+                prevents complications, and supports early detection of issues
+                related to the heart, kidneys, eyes, nerves, and liver.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a
+              href="javascript:void(0)"
+              class="heading block w-full capitalize text-secondary font-bold text-2xl relative duration-500"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="about_faq4_ques">
+                What is FibroScan and how does it help diabetic patients?
+              </div>
+            </a>
+            <div class="content pb-24">
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="about_faq4_ans"
+              >
+                FibroScan is a non-invasive liver assessment technology used to
+                detect liver stiffness and fatty liver disease, conditions
+                commonly associated with diabetes and metabolic disorders.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a
+              href="javascript:void(0)"
+              class="heading block w-full capitalize text-secondary font-bold text-2xl relative duration-500"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="about_faq5_ques">
+                Why are Foot Check-ups necessary for diabetic patients?
+              </div>
+            </a>
+            <div class="content pb-24">
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="about_faq5_ans"
+              >
+                Diabetes can reduce blood circulation and nerve sensitivity in
+                the feet. Regular foot examinations help prevent ulcers,
+                infections, and serious diabetic foot complications.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a
+              href="javascript:void(0)"
+              class="heading block w-full capitalize text-secondary font-bold text-2xl relative duration-500"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="about_faq6_ques">
+                What is a Fundus Eye Check-up?
+              </div>
+            </a>
+            <div class="content pb-24">
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="about_faq6_ans"
+              >
+                A Fundus Check-up is a retinal examination that helps detect
+                diabetic retinopathy and other eye-related complications at an
+                early stage, helping protect long-term vision.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a
+              href="javascript:void(0)"
+              class="heading block w-full capitalize text-secondary font-bold text-2xl relative duration-500"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="about_faq7_ques">
+                What is the purpose of the Lunar DXA Scanner?
+              </div>
+            </a>
+            <div class="content pb-24">
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="about_faq7_ans"
+              >
+                The Lunar DXA Scanner helps measure bone density and detect
+                osteoporosis early, which is important for diabetic patients who
+                may be at increased risk of bone-related issues.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a
+              href="javascript:void(0)"
+              class="heading block w-full capitalize text-secondary font-bold text-2xl relative duration-500"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="about_faq8_ques">
+                How often should I visit the clinic for diabetes management?
+              </div>
+            </a>
+            <div class="content pb-24">
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="about_faq8_ans"
+              >
+                The frequency of visits depends on your condition and treatment
+                plan. Most diabetic patients are advised to schedule regular
+                follow-ups every 3–6 months for effective monitoring and care.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a
+              href="javascript:void(0)"
+              class="heading block w-full capitalize text-secondary font-bold text-2xl relative duration-500"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="about_faq9_ques">
+                Why should patients choose Shankar Diabetes Care Centre?
+              </div>
+            </a>
+            <div class="content pb-24">
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="about_faq9_ans"
+              >
+                Patients trust us for personalized treatment, advanced
+                diagnostic technologies, experienced medical guidance,
+                compassionate care, and over 24 years of excellence in diabetes
+                management since 2002.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <a
+              href="javascript:void(0)"
+              class="heading block w-full capitalize text-secondary font-bold text-2xl relative duration-500"
+            >
+              <div
+                class="icon block absolute top-11 -translate-y-1/2 right-13 duration-500"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="title" data-i18n="about_faq10_ques">
+                How can I book an appointment at Shankar Diabetes Care Centre?
+              </div>
+            </a>
+            <div class="content pb-24">
+              <p
+                class="xxl:text-lg text-sm font-medium text-gary xxl:leading-30 xl:leading-28 leading-26"
+                data-i18n="about_faq10_ans"
+              >
+                You can book an appointment by calling +91-78578 11112 /
+                +91-70709 92526, emailing shankardiab@gmail.com, or using the
+                online appointment form available on the website.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="scroll-percentage"><span id="scroll-percentage-value"></span></div>
+
+    <div id="audio-fab-wrap">
+      <button id="audio-fab" aria-label="Mute audio">
+        <span class="ripple"></span>
+        <span class="fab-tooltip" id="fab-tooltip">Mute</span>
+        <!-- Speaker ON icon -->
+        <svg id="icon-on" viewBox="0 0 24 24">
+          <path
+            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77S18.01 4.14 14 3.23z"
+          />
+        </svg>
+        <!-- Speaker OFF icon (hidden by default) -->
+        <svg id="icon-off" viewBox="0 0 24 24" style="display: none">
+          <path
+            d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"
+          />
+        </svg>
+      </button>
+    </div>
+    <a
+      class="whatsapp-sticky"
+      href="https://wa.me/+917070992526"
+      target="_blank"
+    >
+      <!-- <span class="chat-text">Chat with us</span> -->
+      <div class="icon">
+        <svg viewBox="0 0 24 24">
+          <path
+            fill="#eceff1"
+            d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z"
+          />
+          <path
+            fill="#4caf50"
+            d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z"
+          />
+          <path
+            fill="#fafafa"
+            d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"
+          />
+        </svg>
+      </div>
+    </a>
+
+    <!-- footer section -->
+    <footer class="lg:pt-70 md:pt-40 pt-30 relative bg-[#F4F4FF]">
+      <div class="container">
+        <div class="lg:py-100 md:py-80 py-60">
+          <div class="grid grid-cols-12 gap-25">
+            <div class="lg:col-span-3 sm:col-span-6 col-span-12">
+              <div class="footre-logo">
+                <a href="index.php"
+                  ><img src="assets/img/logo-4.png" alt="img"
+                /></a>
+                <p
+                  class="pt-14 pb-30 text-base leading-30 text-gary font-normal"
+                  data-i18n="footer_about"
+                >
+                  To provide specialized and affordable diabetes care for a
+                  healthier, happier future.
+                </p>
+                <ul class="flex" style="gap: 3px">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/Shankardiabetescare/"
+                      class="flex items-center justify-center xxl:size-50 size-40 max-xxl:text-sm border border-[#444] rounded-full hover:bg-primary duration-500 hover:text-white hover:border-transparent"
+                      target="_blank"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://x.com/shankardiabetes/"
+                      class="flex items-center justify-center xxl:size-50 size-40 max-xxl:text-sm border border-[#444] rounded-full hover:bg-primary duration-500 hover:text-white hover:border-transparent"
+                      target="_blank"
+                      ><i class="fa-brands fa-x-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/shankardiabetescare/"
+                      class="flex items-center justify-center xxl:size-50 size-40 max-xxl:text-sm border border-[#444] rounded-full hover:bg-primary duration-500 hover:text-white hover:border-transparent"
+                      target="_blank"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/@Shankardiabetescarecentre/"
+                      class="flex items-center justify-center xxl:size-50 size-40 max-xxl:text-sm border border-[#444] rounded-full hover:bg-primary duration-500 hover:text-white hover:border-transparent"
+                      target="_blank"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.threads.com/@shankardiabetescare/ "
+                      class="flex items-center justify-center xxl:size-50 size-40 max-xxl:text-sm border border-[#444] rounded-full hover:bg-primary duration-500 hover:text-white hover:border-transparent"
+                      target="_blank"
+                      ><i class="fa-brands fa-threads"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href=" https://www.linkedin.com/company/shankar-diabetes-care-centre-patna/"
+                      class="flex items-center justify-center xxl:size-50 size-40 max-xxl:text-sm border border-[#444] rounded-full hover:bg-primary duration-500 hover:text-white hover:border-transparent"
+                      target="_blank"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="lg:col-span-3 sm:col-span-6 col-span-12">
+              <div
+                class="lg:border-l lg:border-[#D8D8D8] xxl:pl-80 xl:pl-50 sm:pl-40 xxl:ml-40 sm:ml-20"
+              >
+                <h5
+                  class="font-bold xxl:text-2xxl text-xxl capitalize pb-18 font-sora text-secondary"
+                  data-i18n="footer_quick_links"
+                >
+                  Quick Links
+                </h5>
+                <ul>
+                  <li class="pb-16">
+                    <a
+                      href="index.php"
+                      class="text-secondary font-sora hover:text-primary duration-500 capitalize"
+                      data-i18n="footer_home"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li class="pb-16">
+                    <a
+                      href="about.php"
+                      class="text-secondary font-sora hover:text-primary duration-500 capitalize"
+                      data-i18n="footer_about_us"
+                    >
+                      About Us
+                    </a>
+                  </li>
+
+                  <li class="pb-16">
+                    <a
+                      href="services.php"
+                      class="text-secondary font-sora hover:text-primary duration-500 capitalize"
+                      data-i18n="footer_services"
+                    >
+                      Services
+                    </a>
+                  </li>
+                  <li class="pb-16">
+                    <a
+                      href="articles.php"
+                      class="text-secondary font-sora hover:text-primary duration-500 capitalize"
+                      data-i18n="footer_articles"
+                    >
+                      Latest Articles
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="contact.php"
+                      class="text-secondary font-sora hover:text-primary duration-500 capitalize"
+                      data-i18n="footer_contact"
+                    >
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="lg:col-span-3 sm:col-span-6 col-span-12">
+              <div
+                class="lg:border-l lg:border-[#D8D8D8] xxl:pl-70 xl:pl-40 sm:pl-30 xxl:ml-40 sm:ml-20"
+              >
+                <h5
+                  class="font-bold xxl:text-2xxl text-xxl capitalize pb-18 font-sora text-secondary"
+                  data-i18n="footer_contact_us"
+                >
+                  Contact Us
+                </h5>
+                <ul>
+                  <li class="pb-16">
+                    <h6
+                      data-i18n="footer_address_label"
+                      class="pb-6 capitalize font-urbanist text-secondary text-base font-medium leading-[1.2] flex items-center"
+                    >
+                      <i class="mr-5">
+                        <svg
+                          width="10"
+                          height="12"
+                          viewBox="0 0 10 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5 3.00075C4.6066 3.00075 4.22204 3.11804 3.89494 3.33778C3.56784 3.55752 3.3129 3.86985 3.16235 4.23527C3.0118 4.6007 2.97241 5.00279 3.04916 5.39072C3.12591 5.77865 3.31535 6.13499 3.59352 6.41467C3.8717 6.69435 4.22611 6.88481 4.61195 6.96198C4.99779 7.03914 5.39773 6.99954 5.76118 6.84818C6.12463 6.69681 6.43528 6.44049 6.65384 6.11162C6.87241 5.78275 6.98906 5.3961 6.98906 5.00058C6.98906 4.47019 6.7795 3.96152 6.40648 3.58648C6.03346 3.21144 5.52753 3.00075 5 3.00075ZM5 6.00049C4.8033 6.00049 4.61102 5.94185 4.44747 5.83197C4.28392 5.7221 4.15645 5.56594 4.08117 5.38323C4.0059 5.20052 3.98621 4.99947 4.02458 4.8055C4.06295 4.61154 4.15767 4.43337 4.29676 4.29353C4.43585 4.15369 4.61306 4.05846 4.80598 4.01988C4.9989 3.98129 5.19886 4.00109 5.38059 4.07678C5.56232 4.15246 5.71764 4.28062 5.82692 4.44505C5.9362 4.60949 5.99453 4.80281 5.99453 5.00058C5.99453 5.26577 5.88975 5.5201 5.70324 5.70762C5.51673 5.89514 5.26377 6.00049 5 6.00049Z"
+                            fill="#021935"
+                          />
+                          <path
+                            d="M5 12C4.58128 12.0021 4.16813 11.9034 3.79516 11.712C3.42219 11.5206 3.10025 11.2422 2.85629 10.9001C0.961213 8.27179 0 6.29596 0 5.02707C0 3.69381 0.526784 2.41515 1.46447 1.47239C2.40215 0.529636 3.67392 0 5 0C6.32608 0 7.59785 0.529636 8.53553 1.47239C9.47322 2.41515 10 3.69381 10 5.02707C10 6.29596 9.03879 8.27179 7.14371 10.9001C6.89975 11.2422 6.57781 11.5206 6.20484 11.712C5.83187 11.9034 5.41873 12.0021 5 12ZM5 1.09141C3.96192 1.0926 2.96669 1.50773 2.23266 2.24574C1.49862 2.98375 1.08572 3.98436 1.08453 5.02807C1.08453 6.03298 2.02586 7.89132 3.73446 10.2606C3.87951 10.4615 4.0698 10.625 4.28976 10.7377C4.50973 10.8504 4.75311 10.9092 5 10.9092C5.24689 10.9092 5.49027 10.8504 5.71024 10.7377C5.9302 10.625 6.12049 10.4615 6.26554 10.2606C7.97414 7.89132 8.91547 6.03298 8.91547 5.02807C8.91428 3.98436 8.50138 2.98375 7.76734 2.24574C7.03331 1.50773 6.03808 1.0926 5 1.09141Z"
+                            fill="#021935"
+                          />
+                        </svg>
+                      </i>
+                      Address
+                    </h6>
+                    <span
+                      class="font-semibold font-urbanist text-secondary hover:text-primary duration-500"
+                      data-i18n="footer_address"
+                    >
+                      Rajendra Nagar, Road No. 01, Near Electricity Office,
+                      Patna – 16
+                    </span>
+                  </li>
+                  <li class="pb-16">
+                    <h6
+                      data-i18n="footer_phone_label"
+                      class="pb-6 capitalize font-urbanist text-secondary text-base font-medium leading-[1.2] flex items-center"
+                    >
+                      <i class="mr-5">
+                        <svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6.49103 0.501622C6.49103 0.368796 6.5438 0.24141 6.63772 0.147487C6.73164 0.0535649 6.85902 0.000799798 6.99185 0.000799798C8.31964 0.00225799 9.59264 0.530377 10.5315 1.46929C11.4704 2.40819 11.9985 3.68121 12 5.00903C12 5.14185 11.9472 5.26924 11.8533 5.36316C11.7594 5.45708 11.632 5.50985 11.4992 5.50985C11.3664 5.50985 11.239 5.45708 11.1451 5.36316C11.0511 5.26924 10.9984 5.14185 10.9984 5.00903C10.9972 3.94678 10.5747 2.92838 9.82357 2.17726C9.07246 1.42614 8.05408 1.00364 6.99185 1.00245C6.85902 1.00245 6.73164 0.94968 6.63772 0.855758C6.5438 0.761835 6.49103 0.634449 6.49103 0.501622ZM6.99185 3.00574C7.52314 3.00574 8.03268 3.2168 8.40837 3.59249C8.78405 3.96818 8.99511 4.47772 8.99511 5.00903C8.99511 5.14185 9.04787 5.26924 9.14179 5.36316C9.23571 5.45708 9.3631 5.50985 9.49592 5.50985C9.62875 5.50985 9.75613 5.45708 9.85005 5.36316C9.94397 5.26924 9.99674 5.14185 9.99674 5.00903C9.99594 4.21231 9.6791 3.44846 9.11575 2.88509C8.55239 2.32173 7.78855 2.00489 6.99185 2.00409C6.85902 2.00409 6.73164 2.05686 6.63772 2.15078C6.5438 2.2447 6.49103 2.37209 6.49103 2.50491C6.49103 2.63774 6.5438 2.76513 6.63772 2.85905C6.73164 2.95297 6.85902 3.00574 6.99185 3.00574ZM11.5458 8.38407C11.836 8.67511 11.999 9.06935 11.999 9.48037C11.999 9.89139 11.836 10.2856 11.5458 10.5767L11.09 11.102C6.98834 15.029 -2.99291 5.05009 0.873384 0.935335L1.44932 0.434512C1.74068 0.152387 2.1314 -0.00368303 2.53694 6.60132e-05C2.94249 0.00381505 3.33026 0.167082 3.61635 0.454545C3.63188 0.470071 4.55989 1.67555 4.55989 1.67555C4.83525 1.96484 4.98854 2.34912 4.98788 2.74851C4.98723 3.14791 4.83269 3.53169 4.55638 3.82007L3.97644 4.54927C4.29738 5.32911 4.76926 6.03784 5.36495 6.63474C5.96064 7.23165 6.66841 7.70496 7.44759 8.02748L8.18128 7.44403C8.4697 7.16793 8.85341 7.01357 9.25268 7.01301C9.65194 7.01245 10.0361 7.16573 10.3253 7.44102C10.3253 7.44102 11.5302 8.36854 11.5458 8.38407ZM10.8566 9.11227C10.8566 9.11227 9.65819 8.19025 9.64266 8.17473C9.53949 8.07242 9.40007 8.01502 9.25478 8.01502C9.10949 8.01502 8.97007 8.07242 8.8669 8.17473C8.85338 8.18875 7.84323 8.99357 7.84323 8.99357C7.77516 9.04776 7.69415 9.08327 7.60817 9.09662C7.5222 9.10997 7.43423 9.10069 7.35293 9.0697C6.34352 8.69386 5.42667 8.10548 4.66447 7.3444C3.90228 6.58332 3.31256 5.66732 2.93524 4.65845C2.90179 4.57604 2.89088 4.48621 2.90364 4.39819C2.9164 4.31017 2.95238 4.22714 3.00786 4.15763C3.00786 4.15763 3.81267 3.14697 3.82619 3.13395C3.92849 3.03077 3.98589 2.89136 3.98589 2.74606C3.98589 2.60076 3.92849 2.46135 3.82619 2.35817C3.81067 2.34315 2.88867 1.14368 2.88867 1.14368C2.78394 1.04978 2.64727 0.999488 2.50667 1.00312C2.36606 1.00675 2.23217 1.06403 2.13243 1.16321L1.5565 1.66403C-1.2691 5.06161 7.38048 13.2315 10.3578 10.4179L10.8141 9.89205C10.921 9.79301 10.9852 9.65629 10.9931 9.51077C11.0011 9.36525 10.9521 9.22235 10.8566 9.11227Z"
+                            fill="#021935"
+                          />
+                        </svg> </i
+                      >Phone Number
+                    </h6>
+                    <span
+                      ><a
+                        class="font-bold font-urbanist text-secondary hover:text-primary duration-500"
+                        href="tel:+917857811112"
+                        >78578 11112</a
+                      >
+                      |
+                      <a
+                        class="font-bold font-urbanist text-secondary hover:text-primary duration-500"
+                        href="tel:+917070992526"
+                        >70709 92526</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <h6
+                      data-i18n="footer_email_label"
+                      class="pb-6 capitalize font-urbanist text-secondary text-base font-medium leading-[1.2] flex items-center"
+                    >
+                      <i class="mr-5">
+                        <svg
+                          width="14"
+                          height="12"
+                          viewBox="0 0 14 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.0833 0H2.91667C2.1434 0.000866104 1.40208 0.288481 0.855295 0.799756C0.308514 1.31103 0.00092625 2.00422 0 2.72727L0 9.27273C0.00092625 9.99578 0.308514 10.689 0.855295 11.2002C1.40208 11.7115 2.1434 11.9991 2.91667 12H11.0833C11.8566 11.9991 12.5979 11.7115 13.1447 11.2002C13.6915 10.689 13.9991 9.99578 14 9.27273V2.72727C13.9991 2.00422 13.6915 1.31103 13.1447 0.799756C12.5979 0.288481 11.8566 0.000866104 11.0833 0ZM2.91667 1.09091H11.0833C11.4326 1.09155 11.7737 1.18992 12.0627 1.37335C12.3517 1.55678 12.5754 1.81688 12.705 2.12018L8.23783 6.29782C7.90908 6.60399 7.46399 6.77589 7 6.77589C6.53601 6.77589 6.09092 6.60399 5.76217 6.29782L1.295 2.12018C1.42459 1.81688 1.64827 1.55678 1.93728 1.37335C2.22628 1.18992 2.56738 1.09155 2.91667 1.09091ZM11.0833 10.9091H2.91667C2.45254 10.9091 2.00742 10.7367 1.67923 10.4298C1.35104 10.1229 1.16667 9.70672 1.16667 9.27273V3.54545L4.93733 7.06909C5.48487 7.57978 6.22665 7.86657 7 7.86657C7.77335 7.86657 8.51513 7.57978 9.06267 7.06909L12.8333 3.54545V9.27273C12.8333 9.70672 12.649 10.1229 12.3208 10.4298C11.9926 10.7367 11.5475 10.9091 11.0833 10.9091Z"
+                            fill="#021935"
+                          />
+                        </svg>
+                      </i>
+                      email Address
+                    </h6>
+                    <a
+                      class="font-bold font-urbanist text-secondary hover:text-primary duration-500"
+                      href="mailto:shankardiab@gmail.com"
+                      >shankardiab@gmail.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="lg:col-span-3 sm:col-span-6 col-span-12">
+              <div
+                class="lg:border-l lg:border-[#D8D8D8] xxl:pl-80 xl:pl-50 lg:pl-40 xxl:ml-40 lg:ml-20"
+              >
+                <h5
+                  data-i18n="footer_map"
+                  class="font-bold xxl:text-2xxl text-xxl capitalize pb-18 font-sora text-secondary"
+                >
+                  Location Map
+                </h5>
+
+                <div class="w-full h-[100]">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.8966551514422!2d85.15428047596967!3d25.60835011492377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58ef743ef35b%3A0x3d8255f955a23f6e!2sCare%20Centre!5e0!3m2!1sen!2sin!4v1774356902237!5m2!1sen!2sin"
+                    width="100%"
+                    height="100%"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="copyright py-20 max-md:flex-wrap flex md:justify-between justify-center border-t border-[#d7d7d7]"
+        >
+          <p class="text-base leading-30 text-gary font-normal">
+            <span data-i18n="footer_copyright">Copyright © </span
+            ><span class="current-year"> 2026 </span>
+            <span class="text-primary"
+              ><a href="javascript:void(0);"
+                ><span data-i18n="footer_brand">Shankar Diabetes.</span></a
+              ></span
+            >
+            <span data-i18n="footer_rights"> All Rights Reserved. </span>
+          </p>
+          <ul class="flex gap-x-25">
+            <li>
+              <a
+                href="javascript:void(0);"
+                class="text-gary text-base font-Urbanist hover:text-primary duration-500"
+                data-i18n="footer_terms"
+                >Terms & Conditions</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0);"
+                class="text-gary text-base font-Urbanist hover:text-primary duration-500"
+                data-i18n="footer_privacy"
+                >Privacy policy</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/plugins/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/plugins/counter/waypoints-min.js"></script>
+    <script src="assets/js/circle-progres.js"></script>
+    <script src="assets/js/dz.carousel.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/preloader.js"></script>
+    <script src="assets/js/dz.ajax.js"></script>
+
+    <!-- Language System (load translations first, then logic) -->
+    <script src="./translation.js"></script>
+    <script src="./language.js"></script>
+  </body>
+</html>
