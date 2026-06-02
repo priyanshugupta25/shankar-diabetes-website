@@ -4438,7 +4438,7 @@
   }
   @media (min-width: 576px) and (max-width: 767px) {
     .sm\:right-105 {
-      right: calc(var(--spacing) * 125);
+      right: calc(var(--spacing) * 15);
       height: 20px;
       width: 25px;
       top: calc(var(--spacing) * -6);
