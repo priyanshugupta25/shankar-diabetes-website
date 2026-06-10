@@ -379,6 +379,17 @@ window.addEventListener("load", () => {
   const iconOff = document.getElementById("icon-off");
   const tooltip = document.getElementById("fab-tooltip");
 
+  // ── Restore saved position and mute state ──
+  const savedTime = parseFloat(sessionStorage.getItem("audioTime") || "0");
+  const wasMuted = sessionStorage.getItem("audioMuted") === "true";
+  audio.currentTime = savedTime;
+
+  // Save position before leaving any page
+  window.addEventListener("beforeunload", () => {
+    sessionStorage.setItem("audioTime", audio.currentTime);
+    sessionStorage.setItem("audioMuted", audio.paused ? "true" : "false");
+  });
+
   function setPlaying() {
     fab.classList.remove("muted");
     fab.setAttribute("aria-label", "Mute audio");
@@ -395,13 +406,18 @@ window.addEventListener("load", () => {
     tooltip.textContent = "Unmute";
   }
 
-  // Try autoplay immediately
+  // If user had manually muted, respect that — don't auto-resume
+  if (wasMuted) {
+    setPaused();
+    return;
+  }
+
+  // Try autoplay (or resume from saved position)
   audio
     .play()
     .then(() => setPlaying())
     .catch(() => {
-      // Browser blocked autoplay — wait for ANY user interaction, then play
-      setPaused(); // show muted icon until they interact
+      setPaused();
       const unlock = () => {
         audio
           .play()
@@ -412,7 +428,7 @@ window.addEventListener("load", () => {
             document.removeEventListener("touchstart", unlock);
             document.removeEventListener("scroll", unlock);
           })
-          .catch(() => {}); // still blocked, ignore
+          .catch(() => {});
       };
       document.addEventListener("click", unlock);
       document.addEventListener("keydown", unlock);
@@ -420,9 +436,8 @@ window.addEventListener("load", () => {
       document.addEventListener("scroll", unlock);
     });
 
-  // Manual toggle
   fab.addEventListener("click", (e) => {
-    e.stopPropagation(); // don't double-fire the unlock listener
+    e.stopPropagation();
     if (audio.paused) {
       audio.play().then(() => setPlaying());
     } else {
